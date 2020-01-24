@@ -7,19 +7,15 @@ body {
 /*Progress*/
 
 progress {
-    background: #DAA520 !important;
-}
-
-progress {
-    color: lightblue !important;
+    background: #506680 !important;
 }
 
 progress::-webkit-progress-value {
-    background: lightblue !important;
+    background: #DAA520 !important;
 }
 
 progress::-moz-progress-bar {
-    background: lightcolor !important;
+    background: #DAA520 !important;
 }
 
 progress::-webkit-progress-value {
@@ -67,24 +63,24 @@ html[dir] ._1qNwV, html[dir] ._3RiLE, #initial_startup, #startup, html[dir] ._3F
 /*Image*/
 
 [data-asset-intro-image] {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/cuberkam.github.io/master/intro-connection_c98cc75f2aa905314d74375a975d2cf2.png) !important;
+    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/intro-connection_c98cc75f2aa905314d74375a975d2cf2.png) !important;
 }
 
 html[dir=ltr] .message-out .tail-container {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/cuberkam.github.io/master/right.png) !important;
+    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/right.png) !important;
 }
 
 html[dir=ltr] .message-in .tail-container, html[dir=ltr] .message-in .tail-override-left .tail-container, html[dir=ltr] .message-in .tail-override-right .tail-container, html[dir=ltr] .message-out .tail-override-right .tail-container, html[dir=ltr] .message-out .tail-override-left .tail-container {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/cuberkam.github.io/master/left.png) !important;
+    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/left.png) !important;
 }
 
 [data-asset-chat-background] {
     /*.fzCXy*/
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/cuberkam.github.io/master/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81a.png) !important;
+    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81a.png) !important;
 }
 
 ._3XqhJ {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/cuberkam.github.io/master/animated-doodle_600127bdb5f7627ede5cd4ef320f55b0.png) !important;
+    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/animated-doodle_600127bdb5f7627ede5cd4ef320f55b0.png) !important;
 }
 
 /*Image*/
