@@ -1,6 +1,6 @@
 {
   "name": "WhatsApp Web Dark Mode",
-  "version": "2.0.13.0",
+  "version": "2.0.14.0",
   "description": "Dark mode for WhatsApp Web",
   "author": "Erkam Kumru",
   "content_scripts": [
@@ -15,7 +15,7 @@
   ],
   "browser_action": {
     "default_icon": {
-      "16": "icon/whatsapp_dark_mode_16.png"
+      "128": "icon/whatsapp_dark_mode_128.png"
     }
   },
   "icons": {
