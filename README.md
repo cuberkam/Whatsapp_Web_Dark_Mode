@@ -6,11 +6,9 @@
 [<img src="https://dev.opera.com/extensions/branding-guidelines/addons_206x58_en@2x.png" height="60" />](https://addons.opera.com/tr/extensions/details/whatsapp-web-dark-mode/)
 </br>
 
+For Google Chrome
+1- [Download Chameleon extension](https://chrome.google.com/webstore/detail/chamaeleon/dmpojjilddefgnhiicjcmhbkjgbbclob) and add extesion from Opera add-ons.
+2- You should activate developer mode and select this repository file.</br>
 
-
-To install for other browser, you should activate developer mode and select file.
-<!--
-for Google Chrome</br>
-![GoogleChrome](https://developer.chrome.com/static/images/get_started/load_extension.png)
---> 
+To install for other browser, you should activate developer mode and select this repository file.
 
