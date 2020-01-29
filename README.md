@@ -7,8 +7,8 @@
 </br>
 
 For Google Chrome</br>
-1- [Download Chameleon extension](https://chrome.google.com/webstore/detail/chamaeleon/dmpojjilddefgnhiicjcmhbkjgbbclob) and add extesion from Opera add-ons.</br>
-2- Or you should activate developer mode and select this repository file.</br>
+- [Download Chameleon extension](https://chrome.google.com/webstore/detail/chamaeleon/dmpojjilddefgnhiicjcmhbkjgbbclob) and add extesion from Opera add-ons.</br>
+- Or you should activate developer mode and select this repository file.</br>
 
 To install for other browser, you should activate developer mode and select this repository file.
 
