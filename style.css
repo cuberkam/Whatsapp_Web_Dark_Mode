@@ -28,6 +28,10 @@ html[dir] ._3jHKU {
     background-color: #DAA520 !important;
 }
 
+._2BA8e {
+    stroke: #DAA520 !important;
+}
+
 html[dir] .qTFAl._3Z2tD, html[dir] .qTFAl:hover {
     background-color: rgba(184, 134, 11, .1) !important;
 }
@@ -231,20 +235,34 @@ html[dir] ._2HyTU {
 }
 
 html[dir] ._2AqZl {
-    background-color: rgba(21, 38, 66,.6) !important;
+    background-color: rgba(21, 38, 66, .6) !important;
 }
 
 html[dir] ._3fs0K:after {
     background-color: transparent !important;
-    border-bottom: 0px solid rgba(0,0,0,.08) !important;
+    border-bottom: 0px solid rgba(0, 0, 0, .08) !important;
 }
 
-html[dir] ._1Jzz1,html[dir] ._1KDYa,html[dir] ._2KgjI {
+html[dir] ._1Jzz1, html[dir] ._1KDYa, html[dir] ._2KgjI {
     background-color: #152642 !important;
 }
 
 html[dir] .app {
     background-image: none !important;
+}
+
+html[dir] ._3Xx0y {
+    background-color: rgba(184, 134, 11, .25) !important;
+    border-bottom: rgba(184, 134, 11, .08) !important;
+    border-top: 1px solid rgba(184, 134, 11, .15) !important;
+}
+
+._3Xx0y {
+    color: #ffffff !important;
+}
+
+html[dir] ._1lo-H {
+    background-color: #B8860B !important;
 }
 
 /* #region media */
@@ -398,7 +416,7 @@ span[data-icon="default-group"] path[d="M105.946.25C164.318.25 211.64 47.596 211
     fill: #506680 !important;
 }
 
-span[data-icon="default-group"] path[d="M61.543 100.988c8.073 0 14.246-6.174 14.246-14.246s-6.173-14.246-14.246-14.246-14.246 6.173-14.246 14.246 6.174 14.246 14.246 14.246zm8.159 17.541a48.192 48.192 0 0 1 8.545-6.062c-4.174-2.217-9.641-3.859-16.704-3.859-21.844 0-28.492 15.67-28.492 15.67v8.073h26.181l.105-.248c.303-.713 3.164-7.151 10.365-13.574zm80.755-9.921c-6.854 0-12.21 1.543-16.336 3.661a48.223 48.223 0 0 1 8.903 6.26c7.201 6.422 10.061 12.861 10.364 13.574l.105.248h25.456v-8.073c-.001 0-6.649-15.67-28.492-15.67zm0-7.62c8.073 0 14.246-6.174 14.246-14.246s-6.173-14.246-14.246-14.246-14.246 6.173-14.246 14.246 6.173 14.246 14.246 14.246zm-44.093 3.21a23.21 23.21 0 0 0 4.464-.428c.717-.14 1.419-.315 2.106-.521 1.03-.309 2.023-.69 2.976-1.138a21.099 21.099 0 0 0 3.574-2.133 20.872 20.872 0 0 0 5.515-6.091 21.283 21.283 0 0 0 2.121-4.823 22.16 22.16 0 0 0 .706-3.193c.16-1.097.242-2.224.242-3.377s-.083-2.281-.242-3.377a22.778 22.778 0 0 0-.706-3.193 21.283 21.283 0 0 0-3.272-6.55 20.848 20.848 0 0 0-4.364-4.364 21.099 21.099 0 0 0-3.574-2.133 21.488 21.488 0 0 0-2.976-1.138 22.33 22.33 0 0 0-2.106-.521 23.202 23.202 0 0 0-4.464-.428c-12.299 0-21.705 9.405-21.705 21.704 0 12.299 9.406 21.704 21.705 21.704zM145.629 131a36.739 36.739 0 0 0-1.2-1.718 39.804 39.804 0 0 0-3.367-3.967 41.481 41.481 0 0 0-3.442-3.179 42.078 42.078 0 0 0-5.931-4.083 43.725 43.725 0 0 0-3.476-1.776c-.036-.016-.069-.034-.104-.05-5.692-2.581-12.849-4.376-21.746-4.376-8.898 0-16.055 1.795-21.746 4.376-.196.089-.379.185-.572.276a43.316 43.316 0 0 0-3.62 1.917 42.32 42.32 0 0 0-5.318 3.716 41.501 41.501 0 0 0-3.443 3.179 40.632 40.632 0 0 0-3.366 3.967c-.452.61-.851 1.186-1.2 1.718-.324.493-.6.943-.841 1.351l-.061.101a27.96 27.96 0 0 0-.622 1.119c-.325.621-.475.975-.475.975v11.692h82.53v-11.692s-.36-.842-1.158-2.195a35.417 35.417 0 0 0-.842-1.351z"], span[data-icon="default-user"] g{
+span[data-icon="default-group"] path[d="M61.543 100.988c8.073 0 14.246-6.174 14.246-14.246s-6.173-14.246-14.246-14.246-14.246 6.173-14.246 14.246 6.174 14.246 14.246 14.246zm8.159 17.541a48.192 48.192 0 0 1 8.545-6.062c-4.174-2.217-9.641-3.859-16.704-3.859-21.844 0-28.492 15.67-28.492 15.67v8.073h26.181l.105-.248c.303-.713 3.164-7.151 10.365-13.574zm80.755-9.921c-6.854 0-12.21 1.543-16.336 3.661a48.223 48.223 0 0 1 8.903 6.26c7.201 6.422 10.061 12.861 10.364 13.574l.105.248h25.456v-8.073c-.001 0-6.649-15.67-28.492-15.67zm0-7.62c8.073 0 14.246-6.174 14.246-14.246s-6.173-14.246-14.246-14.246-14.246 6.173-14.246 14.246 6.173 14.246 14.246 14.246zm-44.093 3.21a23.21 23.21 0 0 0 4.464-.428c.717-.14 1.419-.315 2.106-.521 1.03-.309 2.023-.69 2.976-1.138a21.099 21.099 0 0 0 3.574-2.133 20.872 20.872 0 0 0 5.515-6.091 21.283 21.283 0 0 0 2.121-4.823 22.16 22.16 0 0 0 .706-3.193c.16-1.097.242-2.224.242-3.377s-.083-2.281-.242-3.377a22.778 22.778 0 0 0-.706-3.193 21.283 21.283 0 0 0-3.272-6.55 20.848 20.848 0 0 0-4.364-4.364 21.099 21.099 0 0 0-3.574-2.133 21.488 21.488 0 0 0-2.976-1.138 22.33 22.33 0 0 0-2.106-.521 23.202 23.202 0 0 0-4.464-.428c-12.299 0-21.705 9.405-21.705 21.704 0 12.299 9.406 21.704 21.705 21.704zM145.629 131a36.739 36.739 0 0 0-1.2-1.718 39.804 39.804 0 0 0-3.367-3.967 41.481 41.481 0 0 0-3.442-3.179 42.078 42.078 0 0 0-5.931-4.083 43.725 43.725 0 0 0-3.476-1.776c-.036-.016-.069-.034-.104-.05-5.692-2.581-12.849-4.376-21.746-4.376-8.898 0-16.055 1.795-21.746 4.376-.196.089-.379.185-.572.276a43.316 43.316 0 0 0-3.62 1.917 42.32 42.32 0 0 0-5.318 3.716 41.501 41.501 0 0 0-3.443 3.179 40.632 40.632 0 0 0-3.366 3.967c-.452.61-.851 1.186-1.2 1.718-.324.493-.6.943-.841 1.351l-.061.101a27.96 27.96 0 0 0-.622 1.119c-.325.621-.475.975-.475.975v11.692h82.53v-11.692s-.36-.842-1.158-2.195a35.417 35.417 0 0 0-.842-1.351z"], span[data-icon="default-user"] g {
     fill: #152642 !important;
 }
 
@@ -406,7 +424,7 @@ span[data-icon="default-group"] path[d="M61.543 100.988c8.073 0 14.246-6.174 14.
     fill: #767D92 !important;
 }
 
-span[data-icon="status-time"] path, span[data-icon="msg-time"] path, ._3j8Pd span[data-icon="status-v3-unread"] path[d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"], ._370iZ span[data-icon="msg-dblcheck"] path, .OWYLS div[role="button"] span[data-icon="x"] path, ._2aUit ._3f5U8 span[data-icon="x"] path, .qfKkX span[data-icon="x"] path, ._3Ux6T span[data-icon="star"] path, ._3j8Pd div[role="button"] span[data-icon="chat"] path, ._3j8Pd div[role="button"] span[data-icon="menu"] path, span[data-icon="search"] path, span[data-icon="status-dblcheck"] path, ._1mGV6 span[data-icon="down"] path, span[data-icon="status-image"] path, span[data-icon="status-location"] path, ._3j8Pd span[data-icon="bubble"] path, ._3j8Pd span[data-icon="star-btn"] path, ._3j8Pd span[data-icon="forward"] path, ._3j8Pd span[data-icon="download"] path, ._3j8Pd span[data-icon="x-viewer"] path, span[data-icon="chevron-right-text"] path, ._370iZ span[data-icon="status-location"] path, ._3M-N- span[data-icon="send"] path, span[data-icon="down-context"] path, button[class="hjJpn"] span[data-icon="ptt"] path, ._30prC span[data-icon="pencil"] path, div[role="button"] span[data-icon="clip"] path, ._1tyVr span[data-icon="settings-notifications"] path, ._1tyVr span[data-icon="settings-wallpaper"] path, ._1tyVr span[data-icon="settings-blocked"] path, ._1tyVr span[data-icon="settings-help"] path, ._1tyVr span[data-icon="add-user"] path, ._8icek span[data-icon="x-viewer"] path, div[role="button"] span[data-icon="search-alt"] path, ._2VVfP span[data-icon="lock-small"] path, .-bh0C span[data-icon="recalled-out"] path, span[data-icon="status-video"] path, span[data-icon="add-alt"] path, span[data-icon="msg-check"] path, span[data-icon="audio-play"] path, span[data-icon="status-check"] path, span[data-icon="status-ptt-gray"] path, span[data-icon="audio-pause"] path, span[data-icon="pinned"] path, span[data-icon="forwarded"] path, span[data-icon="sticker-placeholder"] path, span[data-icon="forward"] path, span[data-icon="copy"] path, span[data-icon="revoke"] path, span[data-icon="back"] path, span[data-icon="emoji-input"] path, span[data-icon="status-sticker"] path, span[data-icon="status-document"] path,span[data-icon="muted"] path {
+span[data-icon="status-time"] path, span[data-icon="msg-time"] path, ._3j8Pd span[data-icon="status-v3-unread"] path[d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"], ._370iZ span[data-icon="msg-dblcheck"] path, .OWYLS div[role="button"] span[data-icon="x"] path, ._2aUit ._3f5U8 span[data-icon="x"] path, .qfKkX span[data-icon="x"] path, ._3Ux6T span[data-icon="star"] path, ._3j8Pd div[role="button"] span[data-icon="chat"] path, ._3j8Pd div[role="button"] span[data-icon="menu"] path, span[data-icon="search"] path, span[data-icon="status-dblcheck"] path, ._1mGV6 span[data-icon="down"] path, span[data-icon="status-image"] path, span[data-icon="status-location"] path, ._3j8Pd span[data-icon="bubble"] path, ._3j8Pd span[data-icon="star-btn"] path, ._3j8Pd span[data-icon="forward"] path, ._3j8Pd span[data-icon="download"] path, ._3j8Pd span[data-icon="x-viewer"] path, span[data-icon="chevron-right-text"] path, ._370iZ span[data-icon="status-location"] path, ._3M-N- span[data-icon="send"] path, span[data-icon="down-context"] path, button[class="hjJpn"] span[data-icon="ptt"] path, ._30prC span[data-icon="pencil"] path, div[role="button"] span[data-icon="clip"] path, ._1tyVr span[data-icon="settings-notifications"] path, ._1tyVr span[data-icon="settings-wallpaper"] path, ._1tyVr span[data-icon="settings-blocked"] path, ._1tyVr span[data-icon="settings-help"] path, ._1tyVr span[data-icon="add-user"] path, ._8icek span[data-icon="x-viewer"] path, div[role="button"] span[data-icon="search-alt"] path, ._2VVfP span[data-icon="lock-small"] path, .-bh0C span[data-icon="recalled-out"] path, span[data-icon="status-video"] path, span[data-icon="add-alt"] path, span[data-icon="msg-check"] path, span[data-icon="audio-play"] path, span[data-icon="status-check"] path, span[data-icon="status-ptt-gray"] path, span[data-icon="audio-pause"] path, span[data-icon="pinned"] path, span[data-icon="forwarded"] path, span[data-icon="sticker-placeholder"] path, span[data-icon="forward"] path, span[data-icon="copy"] path, span[data-icon="revoke"] path, span[data-icon="back"] path, span[data-icon="emoji-input"] path, span[data-icon="status-sticker"] path, span[data-icon="status-document"] path, span[data-icon="muted"] path {
     fill: #ffffff !important;
 }
 
