@@ -265,6 +265,17 @@ html[dir] ._1lo-H {
     background-color: #B8860B !important;
 }
 
+html[dir] .IMn_C {
+    background-color: #081B33 !important;
+}
+
+html[dir] .qlhJH hr {
+    border-top: 1px solid #506680 !important;
+}
+html[dir=ltr] ._2UaNq._30Q1W ._3H4MS{
+    color: #ffffff !important;
+    text-shadow: 0px 0px 0.5px #ffffff !important;
+}
 /* #region media */
 
 @media screen and (min-width: 1301px) {

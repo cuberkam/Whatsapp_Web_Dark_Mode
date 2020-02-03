@@ -1,6 +1,6 @@
 {
   "name": "WhatsApp Web Dark Mode",
-  "version": "2.0.26.0",
+  "version": "2.0.29.0",
   "description": "Dark mode for WhatsApp Web",
   "author": "Erkam Kumru",
   "content_scripts": [
