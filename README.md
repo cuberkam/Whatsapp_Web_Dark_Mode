@@ -3,7 +3,6 @@
 
 [![FireFox Add-On](https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png)](https://addons.mozilla.org/tr/firefox/addon/whatsapp-web-dark-mode/?src=search)
 
-![Mozilla Add-on](https://img.shields.io/amo/dw/{90c10923-8aea-4d82-8922-e794e4b72a45})
 
 [<img src="https://dev.opera.com/extensions/branding-guidelines/addons_206x58_en@2x.png" height="60"/>](https://addons.opera.com/tr/extensions/details/whatsapp-web-dark-mode/)
 </br>
