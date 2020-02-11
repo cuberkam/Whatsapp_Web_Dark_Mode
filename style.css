@@ -52,7 +52,7 @@ html[dir] ._1qNwV, html[dir] ._3RiLE, #initial_startup, #startup, html[dir] ._3F
     background-color: #081B33 !important;
 }
 
-.Qk8nZ, .tzihe, .Jeekp, ._2HHbr, .Sl-9e, ._1zGQT, html[dir=ltr] ._3MYI2, ._1o0MN, ._35Zop:before, ._2JIoO, ._28Bny, ._3H4MS, .xD91K, ._0LqQ, ._3dwyT, input, ._1qWhd, ._13U-5, ._2V2qB, ._6xQdq, .Fzl83:before, .bHCVK, ._357v7, select, ._3u328 .copyable-text .selectable-text, ._1wt6r, ._19vo_, ._1drsQ, .kiodY .kyJvR, .a7otO, ._3qb2N, ._2gliA, .landing-title, ._3uHCS, div[class="_2Bfgm _2MyYN"], .i1XSV._3Q3ui, .jLybP:before, .Y1iVg, ._2XHj8 .nGgVY, ._3RQIp, ._2cR8w, ._17hud, .JmH7x, ._2IHkF, ._3JxFB, ._23MBZ, ._3fktq, ._1lxsr, ._2NdXo, ._8fE-g, ._2v02G, ._12pGw strong, ._2LRBk, ._1goQ0, ._1Wv89 {
+.Qk8nZ, .tzihe, .Jeekp, ._2HHbr, .Sl-9e, ._1zGQT, html[dir=ltr] ._3MYI2, ._1o0MN, ._35Zop:before, ._2JIoO, ._28Bny, ._3H4MS, .xD91K, ._0LqQ, ._3dwyT, input, ._1qWhd, ._13U-5, ._2V2qB, ._6xQdq, .Fzl83:before, .bHCVK, ._357v7, select, ._3u328 .copyable-text .selectable-text, ._1wt6r, ._19vo_, ._1drsQ, .kiodY .kyJvR, .a7otO, ._3qb2N, ._2gliA, .landing-title, ._3uHCS, div[class="_2Bfgm _2MyYN"], .i1XSV._3Q3ui, .jLybP:before, .Y1iVg, ._2XHj8 .nGgVY, ._3RQIp, ._2cR8w, ._17hud, .JmH7x, ._2IHkF, ._3JxFB, ._23MBZ, ._3fktq, ._1lxsr, ._2NdXo, ._8fE-g, ._2v02G, ._12pGw strong, ._2LRBk, ._1goQ0, ._1Wv89, ._2MoEz {
     color: #ffffff !important;
 }
 
@@ -272,10 +272,48 @@ html[dir] .IMn_C {
 html[dir] .qlhJH hr {
     border-top: 1px solid #506680 !important;
 }
-html[dir=ltr] ._2UaNq._30Q1W ._3H4MS{
+
+html[dir=ltr] ._2UaNq._30Q1W ._3H4MS {
     color: #ffffff !important;
     text-shadow: 0px 0px 0.5px #ffffff !important;
 }
+
+html[dir] ._1PENu {
+    border-top: 1px solid #506680 !important;
+}
+
+html[dir=ltr] ._30sf0 {
+    border-left: none !important;
+}
+
+html[dir] .FPZFa {
+    border: 1px solid #DAA520 !important;
+}
+
+html[dir] .I72vi {
+    background-color: #152642 !important;
+}
+
+.I72vi {
+    overflow: auto !important;
+}
+
+html[dir] ._2RT36 {
+    border: 5px solid #ffffff !important;
+}
+
+html[dir] ._2Fvnm ._3ogpF {
+    border-bottom: 2px solid #DAA520 !important;
+}
+
+.Am8s6 {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+._3Yulp {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
 /* #region media */
 
 @media screen and (min-width: 1301px) {
@@ -310,38 +348,6 @@ html[dir=ltr] ._2UaNq._30Q1W ._3H4MS{
 }
 
 /* #endregion Input Type Range */
-
-html[dir] ._1PENu {
-    border-top: 1px solid #506680 !important;
-}
-
-html[dir=ltr] ._30sf0 {
-    border-left: none !important;
-}
-
-html[dir] .FPZFa {
-    border: 1px solid #DAA520 !important;
-}
-
-html[dir] .I72vi {
-    background-color: #152642 !important;
-}
-
-.I72vi {
-    overflow: auto !important;
-}
-
-html[dir] ._2RT36 {
-    border: 5px solid #ffffff !important;
-}
-
-html[dir] ._2Fvnm ._3ogpF {
-    border-bottom: 2px solid #DAA520 !important;
-}
-
-.Am8s6 {
-    color: rgba(255, 255, 255, .5) !important;
-}
 
 /* #region Progress */
 
@@ -392,31 +398,6 @@ html[dir=ltr] .message-in .tail-container, html[dir=ltr] .message-in .tail-overr
 
 /* #endregion Image */
 
-/* #region Image */
-
-[data-asset-intro-image] {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/intro-connection_c98cc75f2aa905314d74375a975d2cf2.png) !important;
-}
-
-html[dir=ltr] .message-out .tail-container {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/right.png) !important;
-}
-
-html[dir=ltr] .message-in .tail-container, html[dir=ltr] .message-in .tail-override-left .tail-container, html[dir=ltr] .message-in .tail-override-right .tail-container, html[dir=ltr] .message-out .tail-override-right .tail-container, html[dir=ltr] .message-out .tail-override-left .tail-container {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/left.png) !important;
-}
-
-[data-asset-chat-background] {
-    /*.fzCXy*/
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81a.png) !important;
-}
-
-._3XqhJ {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/animated-doodle_600127bdb5f7627ede5cd4ef320f55b0.png) !important;
-}
-
-/* #endregion Image */
-
 /* #region Icons */
 
 .qfKkX path, ._3p0T6 path, ._3f5U8 span[data-icon="x"] path, ._2VVfP span[data-icon="msg-dblcheck"] path, span[data-icon="menu-white"] path {
@@ -435,7 +416,7 @@ span[data-icon="default-group"] path[d="M61.543 100.988c8.073 0 14.246-6.174 14.
     fill: #767D92 !important;
 }
 
-span[data-icon="status-time"] path, span[data-icon="msg-time"] path, ._3j8Pd span[data-icon="status-v3-unread"] path[d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"], ._370iZ span[data-icon="msg-dblcheck"] path, .OWYLS div[role="button"] span[data-icon="x"] path, ._2aUit ._3f5U8 span[data-icon="x"] path, .qfKkX span[data-icon="x"] path, ._3Ux6T span[data-icon="star"] path, ._3j8Pd div[role="button"] span[data-icon="chat"] path, ._3j8Pd div[role="button"] span[data-icon="menu"] path, span[data-icon="search"] path, span[data-icon="status-dblcheck"] path, ._1mGV6 span[data-icon="down"] path, span[data-icon="status-image"] path, span[data-icon="status-location"] path, ._3j8Pd span[data-icon="bubble"] path, ._3j8Pd span[data-icon="star-btn"] path, ._3j8Pd span[data-icon="forward"] path, ._3j8Pd span[data-icon="download"] path, ._3j8Pd span[data-icon="x-viewer"] path, span[data-icon="chevron-right-text"] path, ._370iZ span[data-icon="status-location"] path, ._3M-N- span[data-icon="send"] path, span[data-icon="down-context"] path, button[class="hjJpn"] span[data-icon="ptt"] path, ._30prC span[data-icon="pencil"] path, div[role="button"] span[data-icon="clip"] path, ._1tyVr span[data-icon="settings-notifications"] path, ._1tyVr span[data-icon="settings-wallpaper"] path, ._1tyVr span[data-icon="settings-blocked"] path, ._1tyVr span[data-icon="settings-help"] path, ._1tyVr span[data-icon="add-user"] path, ._8icek span[data-icon="x-viewer"] path, div[role="button"] span[data-icon="search-alt"] path, ._2VVfP span[data-icon="lock-small"] path, .-bh0C span[data-icon="recalled-out"] path, span[data-icon="status-video"] path, span[data-icon="add-alt"] path, span[data-icon="msg-check"] path, span[data-icon="audio-play"] path, span[data-icon="status-check"] path, span[data-icon="status-ptt-gray"] path, span[data-icon="audio-pause"] path, span[data-icon="pinned"] path, span[data-icon="forwarded"] path, span[data-icon="sticker-placeholder"] path, span[data-icon="forward"] path, span[data-icon="copy"] path, span[data-icon="revoke"] path, span[data-icon="back"] path, span[data-icon="emoji-input"] path, span[data-icon="status-sticker"] path, span[data-icon="status-document"] path, span[data-icon="muted"] path {
+span[data-icon="status-time"] path, span[data-icon="msg-time"] path, ._3j8Pd span[data-icon="status-v3-unread"] path[d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"], ._370iZ span[data-icon="msg-dblcheck"] path, .OWYLS div[role="button"] span[data-icon="x"] path, ._2aUit ._3f5U8 span[data-icon="x"] path, .qfKkX span[data-icon="x"] path, ._3Ux6T span[data-icon="star"] path, ._3j8Pd div[role="button"] span[data-icon="chat"] path, ._3j8Pd div[role="button"] span[data-icon="menu"] path, span[data-icon="search"] path, span[data-icon="status-dblcheck"] path, ._1mGV6 span[data-icon="down"] path, span[data-icon="status-image"] path, span[data-icon="status-location"] path, ._3j8Pd span[data-icon="bubble"] path, ._3j8Pd span[data-icon="star-btn"] path, ._3j8Pd span[data-icon="forward"] path, ._3j8Pd span[data-icon="download"] path, ._3j8Pd span[data-icon="x-viewer"] path, span[data-icon="chevron-right-text"] path, ._370iZ span[data-icon="status-location"] path, ._3M-N- span[data-icon="send"] path, span[data-icon="down-context"] path, button[class="hjJpn"] span[data-icon="ptt"] path, ._30prC span[data-icon="pencil"] path, div[role="button"] span[data-icon="clip"] path, ._1tyVr span[data-icon="settings-notifications"] path, ._1tyVr span[data-icon="settings-wallpaper"] path, ._1tyVr span[data-icon="settings-blocked"] path, ._1tyVr span[data-icon="settings-help"] path, ._1tyVr span[data-icon="add-user"] path, ._8icek span[data-icon="x-viewer"] path, div[role="button"] span[data-icon="search-alt"] path, ._2VVfP span[data-icon="lock-small"] path, .-bh0C span[data-icon="recalled-out"] path, span[data-icon="status-video"] path, span[data-icon="add-alt"] path, span[data-icon="msg-check"] path, span[data-icon="audio-play"] path, span[data-icon="status-check"] path, span[data-icon="status-ptt-gray"] path, span[data-icon="audio-pause"] path, span[data-icon="pinned"] path, span[data-icon="forwarded"] path, span[data-icon="sticker-placeholder"] path, span[data-icon="forward"] path, span[data-icon="copy"] path, span[data-icon="revoke"] path, span[data-icon="back"] path, span[data-icon="emoji-input"] path, span[data-icon="status-sticker"] path, span[data-icon="status-document"] path, span[data-icon="muted"] path, span[data-icon="checkmark"] path {
     fill: #ffffff !important;
 }
 
@@ -451,7 +432,7 @@ span[data-icon="down-context"] path {
     fill-opacity: 1 !important;
 }
 
-._370iZ span[data-icon="msg-dblcheck-ack"] path, span[data-icon="msg-dblcheck-ack-light"] path, ._1oNFt path, ._3j8Pd span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"], ._2fF63 span[data-icon="status-dblcheck-ack"] path, ._2wn58 svg path, ._1DnDx span[data-icon="checkbox-round-checked"] path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"], span[data-icon="audio-download"] path {
+._370iZ span[data-icon="msg-dblcheck-ack"] path, span[data-icon="msg-dblcheck-ack-light"] path, ._1oNFt path, ._3j8Pd span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"], ._2fF63 span[data-icon="status-dblcheck-ack"] path, ._2wn58 svg path, ._1DnDx span[data-icon="checkbox-round-checked"] path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"], span[data-icon="audio-download"] path, span[data-icon="status-dblcheck-ack"] path {
     fill: #DAA520 !important;
 }
 
