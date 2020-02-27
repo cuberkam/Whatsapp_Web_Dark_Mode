@@ -40,7 +40,7 @@ html[dir] ._1ccjW:after, html[dir] ._3PQ7V, html[dir] ._1puWZ, html[dir] ._2xikZ
     background-color: #B8860B !important;
 }
 
-html[dir] ._1WMT2:before, html[dir] ._3RWII {
+html[dir] ._1WMT2:before, html[dir] ._3RWII,html[dir] ._70TS5 {
     background-color: transparent !important;
 }
 
@@ -52,8 +52,12 @@ html[dir] ._1qNwV, html[dir] ._3RiLE, #initial_startup, #startup, html[dir] ._3F
     background-color: #081B33 !important;
 }
 
-.Qk8nZ, .tzihe, .Jeekp, ._2HHbr, .Sl-9e, ._1zGQT, html[dir=ltr] ._3MYI2, ._1o0MN, ._35Zop:before, ._2JIoO, ._28Bny, ._3H4MS, .xD91K, ._0LqQ, ._3dwyT, input, ._1qWhd, ._13U-5, ._2V2qB, ._6xQdq, .Fzl83:before, .bHCVK, ._357v7, select, ._3u328 .copyable-text .selectable-text, ._1wt6r, ._19vo_, ._1drsQ, .kiodY .kyJvR, .a7otO, ._3qb2N, ._2gliA, .landing-title, ._3uHCS, div[class="_2Bfgm _2MyYN"], .i1XSV._3Q3ui, .jLybP:before, .Y1iVg, ._2XHj8 .nGgVY, ._3RQIp, ._2cR8w, ._17hud, .JmH7x, ._2IHkF, ._3JxFB, ._23MBZ, ._3fktq, ._1lxsr, ._2NdXo, ._8fE-g, ._2v02G, ._12pGw strong, ._2LRBk, ._1goQ0, ._1Wv89, ._2MoEz, ._3FeAD ._3u328 {
+.Qk8nZ, .tzihe, .Jeekp, ._2HHbr, .Sl-9e, ._1zGQT, html[dir=ltr] ._3MYI2, ._1o0MN, ._35Zop:before, ._2JIoO, ._28Bny, ._3H4MS, .xD91K, ._0LqQ, ._3dwyT, input, ::placeholder, ._1qWhd, ._13U-5, ._2V2qB, ._6xQdq, .Fzl83:before, .bHCVK, ._357v7, select, ._3u328 .copyable-text .selectable-text, ._1wt6r, ._19vo_, ._1drsQ, .kiodY .kyJvR, .a7otO, ._3qb2N, ._2gliA, .landing-title, ._3uHCS, div[class="_2Bfgm _2MyYN"], .i1XSV._3Q3ui, .jLybP:before, .Y1iVg, ._2XHj8 .nGgVY, ._3RQIp, ._2cR8w, ._17hud, .JmH7x, ._2IHkF, ._3JxFB, ._23MBZ, ._3fktq, ._1lxsr, ._2NdXo, ._8fE-g, ._2v02G, ._12pGw strong, ._2LRBk, ._1goQ0, ._1Wv89, ._2MoEz, ._3FeAD ._3u328 {
     color: #ffffff !important;
+}
+
+._2heX1 {
+    color: #081B33 !important;
 }
 
 html[dir] .jZhyM {
@@ -257,7 +261,7 @@ html[dir] ._3Xx0y {
     border-top: 1px solid rgba(184, 134, 11, .15) !important;
 }
 
-._3Xx0y {
+._3Xx0y,._2lKjK {
     color: #ffffff !important;
 }
 
