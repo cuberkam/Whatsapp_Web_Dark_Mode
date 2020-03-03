@@ -1,7 +1,7 @@
 {
   "name": "Lunate Dark Mode",
   "short_name": "LDM",
-  "version": "3.0.4.0",
+  "version": "3.2.23.0",
   "description": "Dark theme for WhatsApp Web",
   "author": "Erkam Kumru",
   "content_scripts": [
