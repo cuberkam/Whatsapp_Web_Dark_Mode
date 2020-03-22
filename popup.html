@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Rubik+Mono+One&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --dark-color: #B8860B;
+      --dark-bg-color: #081B33;
+      --light-color: #00BFA5;
+      --light-bg-color: #EDEDED;
+    }
+    /*#region Switch Button*/
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--light-color);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: var(--light-bg-color);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked+.slider {
+      background-color: var(--dark-color);
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+      background-color: var(--dark-bg-color) !important;
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    /*#endregion Switch Button*/
+
+    .color-1 {
+      color: var(--dark-color);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .color-2 {
+      color: var(--light-color);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .bg-color-1 {
+      background-color: var(--dark-bg-color);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .bg-color-2 {
+      background-color: var(--light-bg-color);;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .box {
+      height: 150px;
+      width: 300px;
+      outline: none;
+      border-radius: 5px !important;
+    }
+
+    .icon {
+      margin: 10px 10px 0px 10px;
+      fill: var(--dark-color);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .icon-fill {
+      fill: var(--light-color) !important;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .text-1 {
+      text-align: center;
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 35px;
+      float: right;
+      padding-right: 15px;
+      padding-bottom: 0%;
+    }
+
+    .text-2 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      letter-spacing: 5px;
+      float: right;
+      padding-right: 15px;
+      padding-bottom: 0%;
+    }
+
+    .text-3 {
+      text-align: center;
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 25px;
+      float: right;
+      padding-right: 30px;
+      padding-top: 8px;
+      padding-bottom: 0%;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 0px;
+    }
+
+    .grid-item {
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body id="body" class="box bg-color-1 grid-container">
+  <div class="grid-item">
+    <svg id="icon" class="icon" width="75px" height="75px" viewBox="0 0 340 340" version="1.1"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+      xmlns:serif="http://www.serif.com/"
+      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+      <g transform="matrix(1,0,0,1,-230,-30)">
+        <g transform="matrix(1.09677,0,0,1.09677,125.807,-64.3226)">
+          <g transform="matrix(1,0,0,1,329.67,210.207)">
+            <path
+              d="M-76.846,-100.156C-147.414,-100.156 -204.798,-43.211 -204.798,26.806C-204.798,54.572 -195.752,80.307 -180.429,101.245L-196.406,148.387L-147.246,132.766C-127.048,146.019 -102.847,153.755 -76.846,153.755C-6.308,153.755 51.094,96.806 51.094,26.806C51.094,-43.211 -6.308,-100.156 -76.846,-100.156M75.33,26.806C75.33,110.191 7.199,177.807 -76.846,177.807C-103.536,177.807 -128.611,170.99 -150.41,159.017L-234.67,185.793L-207.205,104.779C-221.064,82.021 -229.034,55.33 -229.034,26.806C-229.034,-56.597 -160.903,-124.207 -76.846,-124.207C7.199,-124.207 75.33,-56.597 75.33,26.806" />
+          </g>
+        </g>
+        <g transform="matrix(1.09677,0,0,1.09677,125.807,-64.3226)">
+          <g transform="matrix(0.798186,-0.602411,0.602411,0.798186,-144.543,183.718)">
+            <path
+              d="M279.351,183.7C280.359,182.929 280.737,181.585 280.277,180.402C279.818,179.218 278.632,178.481 277.368,178.592C226.599,183.632 186.89,226.517 186.89,278.602C186.89,330.688 226.599,373.573 277.368,378.61C278.631,378.72 279.815,377.983 280.273,376.802C280.732,375.62 280.355,374.278 279.349,373.507C255.434,354.554 237.141,318.697 237.141,278.602C237.141,238.507 255.434,202.651 279.351,183.7Z" />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="grid-item">
+    <p style="padding: 0;">
+      <span id="text-1" class="text-1 color-1">LUNATE</span><br><span id="text-2" class="text-2 color-1">DARK
+        MODE</span>
+    </p>
+  </div>
+  <div class="grid-item" style="padding-top: 5px;">
+    <label class="switch">
+      <input id="check" type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="grid-item">
+    <span id="text-3" class="text-3 color-1">DISABLE</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,441 +1,541 @@
-body {
-    background-color: #081B33 !important;
-    color: #ffffff !important;
-    background-image: linear-gradient(180deg, #081B33, #081B33) !important;
+:root{
+    --Maastricht-Blue:#081B33;
+    --Maastricht-Blue-Rgb:8, 27, 51;
+    --Yankees-Blue:#152642;
+    --Yankees-Blue-Rgb:21, 38, 66;
+    --Police-Blue:#2F4562;
+    --Police-Blue-Rgb:47, 69, 98;
+    --Dark-Electric-Blue:#506680;
+    --Dark-Electric-Blue-Rgb:80, 102, 128;
+    --Slate-Gray:#767D92;
+
+    --Dark-Goldenrod:#B8860B;
+    --Dark-Goldenrod-Rgb:184, 134, 11;
+    --Goldenrod:#DAA520;
+    --Goldenrod-Rgb:218, 165, 32;
+    --Maize:#F1C84C;
+
+    --White-Rgb: 255, 255, 255;
+}
+body.dark {
+    color: white !important
+}
+html[dir] body.dark {
+    background-image: linear-gradient(180deg, var(--Yankees-Blue), var(--Maastricht-Blue)) !important
+}
+html[dir] .dark ::-webkit-scrollbar-thumb {
+    background-color: var(--Dark-Goldenrod) !important
+}
+html[dir] .dark ::-webkit-scrollbar-track {
+    background-color: transparent
+}
+.dark {
+    --active-tab-marker: var(--Dark-Goldenrod) !important;
+    --active-tab-marker-rgb: var(--Dark-Goldenrod-Rgb) !important;
+    --app-background-stripe: var(--Dark-Goldenrod) !important;
+    --app-background-stripe-rgb: var(--Dark-Goldenrod-Rgb) !important;
+    --audio-progress-incoming: var(--Goldenrod) !important;
+    --audio-progress-incoming-rgb: var(--Goldenrod-Rgb) !important;
+    --audio-progress-played-incoming: var(--Goldenrod) !important;
+    --audio-progress-played-incoming-rgb: var(--Goldenrod-Rgb) !important;
+    --audio-progress-played-outgoing: var(--Goldenrod) !important;
+    --audio-progress-played-outgoing-rgb: var(--Goldenrod-Rgb) !important;
+    --audio-track-incoming: var(--Dark-Electric-Blue) !important;
+    --audio-track-incoming-rgb: var(--Dark-Electric-Blue-Rgb) !important;
+    --audio-track-outgoing: var(--Dark-Electric-Blue) !important;
+    --audio-track-outgoing-rgb: var(--Dark-Electric-Blue-Rgb) !important;
+    --avatar-placeholder-background: var(--Dark-Electric-Blue) !important;
+    --avatar-placeholder-background-rgb: var(--Dark-Electric-Blue-Rgb) !important;
+    --avatar-placeholder-primary: white !important;
+    --avatar-placeholder-primary-rgb: var(--White-Rgb) !important;
+    --background-default: var(--Yankees-Blue) !important;
+    --background-default-rgb: var(--Yankees-Blue-Rgb) !important;
+    --background-default-active: var(--Police-Blue) !important;
+    --background-default-active-rgb: var(--Police-Blue-Rgb) !important;
+    --background-default-hover: var(--Police-Blue) !important;
+    --background-default-hover-rgb: var(--Police-Blue-Rgb) !important;
+    --border-chatlist: var(--Police-Blue) !important;
+    --border-chatlist-rgb: var(--Police-Blue-Rgb) !important;
+    --border-default: var(--Police-Blue) !important;
+    --border-default-rgb: var(--Police-Blue-Rgb) !important;
+    --butterbar-background-default: var(--Police-Blue) !important;
+    --butterbar-background-default-rgb: var(--Police-Blue-Rgb) !important;
+    --butterbar-primary: hsla(220, 4%, 84%, .97) !important;
+    --butterbar-primary-rgb: 213, 214, 216 !important;
+    --butterbar-secondary: hsla(220, 4%, 84%, .97) !important;
+    --butterbar-secondary-rgb: 213, 214, 216 !important;
+    --button-primary-background: var(--Dark-Goldenrod) !important;
+    --button-primary-background-rgb: var(--Dark-Goldenrod-Rgb) !important;
+    --button-primary-background-hover: var(--Goldenrod) !important;
+    --button-primary-background-hover-rgb: var(--Goldenrod-Rgb) !important;
+    --button-secondary: var(--Goldenrod) !important;
+    --button-secondary-rgb: var(--Goldenrod-Rgb) !important;
+    --icon: #d5d6d8f7 !important;
+    --icon-rgb: 213, 214, 216 !important;
+    --icon-lighter: hsla(220, 4%, 84%, .97) !important;
+    --icon-lighter-rgb: 213, 214, 216 !important;
+    --input-placeholder: #d5d6d8f7 !important;
+    --input-placeholder-rgb: 213, 214, 216 !important;
+    --intro-background: var(--Maastricht-Blue) !important;
+    --intro-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+    --panel-background: var(--Yankees-Blue) !important;
+    --panel-background-rgb: var(--Yankees-Blue-Rgb) !important;
+    --panel-background-deeper: var(--Yankees-Blue) !important;
+    --panel-background-deeper-rgb: var(--Yankees-Blue-Rgb) !important;
+    --panel-background-lighter: var(--Yankees-Blue) !important;
+    --panel-background-lighter-rgb: var(--Yankees-Blue-Rgb) !important;
+    --secondary: hsla(220, 4%, 84%, 0.969) !important;
+    --secondary-rgb: 213, 214, 216 !important;
+    --secondary-light: hsla(220, 4%, 84%, 0.969) !important;
+    --secondary-light-rgb: 213, 214, 216 !important;
+    --secondary-lighter: hsla(220, 4%, 84%, 0.97) !important;
+    --secondary-lighter-rgb: 213, 214, 216 !important;
+    --secondary-stronger: hsla(220, 4%, 84%, 0.969) !important;
+    --secondary-stronger-rgb: 213, 214, 216 !important;
+    --unread-marker-background: var(--Goldenrod) !important;
+    --unread-marker-background-rgb: var(--Goldenrod-Rgb) !important;
+    --gray-900-rgb: 8, 27, 51 !important;
+    --photopicker-overlay-background: hsla(43, 89%, 38%, .8);
+    --photopicker-overlay-background-rgb: 183, 134, 11;
+    --incoming-background-deeper: var(--Dark-Electric-Blue) !important;
+    --incoming-background-deeper-rgb: var(--Dark-Electric-Blue-Rgb) !important;
+    --outgoing-background-deeper: var(--Dark-Electric-Blue) !important;
+    --outgoing-background-deeper-rgb: var(--Dark-Electric-Blue-Rgb) !important;
+    --tooltip-background: rgba(184, 134, 11, .85) !important;
+    --tooltip-background-rgb: 184.25, 134.25, 11.25 !important;
+    --icon-ack: var(--Goldenrod) !important;
+    --icon-ack-rgb: var(--Goldenrod-Rgb) !important;
+    --teal: var(--Goldenrod) !important;
+    --teal-rgb: var(--Goldenrod-Rgb) !important;
+    --panel-background-colored-deeper: var(--Dark-Goldenrod) !important;
+    --panel-background-colored-deeper-rgb: var(--Dark-Goldenrod-Rgb) !important;
+    --highlight:var(--Goldenrod) !important;
+}
+html[dir] .dark ._1qNwV:after {
+    border-top: 6px solid var(--Dark-Goldenrod) !important;
+}
+html[dir] .dark .eiCXe{
+    background-color: var(--Police-Blue) !important;
+}
+html[dir] .dark ._2UaNq {
+    border-top: 1px solid var(--Police-Blue) !important;
+    border-bottom: 1px solid var(--Police-Blue) !important;
+}
+html[dir] .dark ._2WP9Q, html[dir] .dark ._2n0jo {
+    border-top: none !important;
+}
+.dark ._3DxjC {
+    color: rgba(var(--icon-lighter-rgb),1) !important;
+}
+html[dir] .dark .ZP8RM{
+    background-color: var(--Yankees-Blue) !important;
 }
 
-html[dir=ltr] ._1WMT2:before {
+/* #region Progress */
+
+progress {
+    background: var(--Dark-Electric-Blue) !important;
+}
+
+progress::-webkit-progress-value {
+    background: var(--Goldenrod) !important;
+}
+
+progress::-moz-progress-bar {
+    background: var(--Goldenrod) !important;
+}
+
+progress::-webkit-progress-value {
+    background: var(--Goldenrod) !important;
+}
+
+progress::-webkit-progress-bar {
+    background: var(--Dark-Electric-Blue) !important;
+}
+
+/* #endregion Progress*/
+
+html[dir=ltr] .dark ._1WMT2:before {
     left: 0 !important;
 }
 
-._1WMT2._2V_Wj {
+.dark ._1WMT2._2V_Wj {
     z-index: 0 !important;
 }
 
-html[dir] ._1WMT2._2V_Wj, html[dir] ._3yth3, html[dir] ._26pkE {
-    background-color: #2F4562 !important;
+html[dir] .dark ._1WMT2._2V_Wj, html[dir] .dark ._3yth3, html[dir] .dark ._26pkE {
+    background-color: var(--Police-Blue) !important;
 }
 
-._1WMT2._2V_Wj:after, html[dir] ._1WMT2._2V_Wj:before, html[dir] ._3EeLD {
+.dark ._1WMT2._2V_Wj:after, html[dir] .dark ._1WMT2._2V_Wj:before, html[dir] .dark ._3EeLD {
     background-color: transparent !important;
 }
 
-html[dir] ._3j8Pd._1eXOh, html[dir] ._3j8Pd.GPmgf, html[dir] ._3j8Pd:active {
-    background-color: rgba(255, 255, 255, .1) !important;
+html[dir] .dark ._3j8Pd._1eXOh, html[dir] .dark ._3j8Pd.GPmgf, html[dir] .dark ._3j8Pd:active {
+    background-color: rgba(var(--White-Rgb), .1) !important;
 }
 
-html[dir] ._3jHKU {
-    background-color: #DAA520 !important;
+html[dir] .dark ._3jHKU {
+    background-color: var(--Goldenrod) !important;
 }
 
-._2BA8e {
-    stroke: #DAA520 !important;
+.dark ._2BA8e {
+    stroke: var(--Goldenrod) !important;
 }
 
-html[dir] .qTFAl._3Z2tD, html[dir] .qTFAl:hover {
-    background-color: rgba(184, 134, 11, .1) !important;
+html[dir] .dark .qTFAl._3Z2tD, html[dir] .dark .qTFAl:hover {
+    background-color: rgba(var(--Dark-Goldenrod-Rgb), .1) !important;
 }
 
-html[dir] ._1ccjW:after, html[dir] ._3PQ7V, html[dir] ._1puWZ, html[dir] ._2xikZ, ._15wNI, html[dir] .landing-wrapper:before, html[dir] ._27U_m:before, html[dir] ._2XHj8, html[dir] ._3D31H, html[dir] ._22oFl {
-    background-color: #B8860B !important;
+html[dir] .dark ._1ccjW:after, html[dir] .dark ._3PQ7V, html[dir] .dark ._1puWZ, html[dir] .dark ._2xikZ, .dark ._15wNI, html[dir] .dark .landing-wrapper:before, html[dir] .dark ._27U_m:before, html[dir] .dark ._2XHj8, html[dir] .dark ._3D31H, html[dir] .dark ._22oFl {
+    background-color: var(--Dark-Goldenrod) !important;
 }
 
-html[dir] ._1WMT2:before, html[dir] ._3RWII, html[dir] ._70TS5 {
+html[dir] .dark ._1WMT2:before, html[dir] .dark ._3RWII, html[dir] .dark ._70TS5 {
     background-color: transparent !important;
 }
 
-._15wNI, html[dir] ._1qNwV:after {
-    border-color: #B8860B !important;
+.dark ._15wNI, html[dir] .dark ._1qNwV:after {
+    border-color: var(--Dark-Goldenrod) !important;
 }
 
-html[dir] ._1qNwV, html[dir] ._3RiLE, #initial_startup, #startup, html[dir] ._3Fq9Y.iEUx2, html[dir] ._1T8rb, html[dir] .NuujD, html[dir] .NeQRT, ._2l-YP:first-child {
-    background-color: #081B33 !important;
+html[dir] .dark ._1qNwV, html[dir] .dark ._3RiLE, #initial_startup, #startup, html[dir] .dark ._3Fq9Y.iEUx2, html[dir] .dark ._1T8rb, html[dir] .dark .NuujD, html[dir] .dark .NeQRT, .dark ._2l-YP:first-child {
+    background-color: var(--Maastricht-Blue) !important;
 }
 
-.Qk8nZ, .tzihe, .Jeekp, ._2HHbr, .Sl-9e, ._1zGQT, html[dir=ltr] ._3MYI2, ._1o0MN, ._35Zop:before, ._2JIoO, ._28Bny, ._3H4MS, .xD91K, ._0LqQ, ._3dwyT, input, ::placeholder, ._1qWhd, ._13U-5, ._2V2qB, ._6xQdq, .Fzl83:before, .bHCVK, ._357v7, select, ._3u328 .copyable-text .selectable-text, ._1wt6r, ._19vo_, ._1drsQ, .kiodY .kyJvR, .a7otO, ._3qb2N, ._2gliA, .landing-title, ._3uHCS, div[class="_2Bfgm _2MyYN"], .i1XSV._3Q3ui, .jLybP:before, .Y1iVg, ._2XHj8 .nGgVY, ._3RQIp, ._2cR8w, ._17hud, .JmH7x, ._2IHkF, ._3JxFB, ._23MBZ, html[dir] ._3fktq, ._1lxsr, ._2NdXo, ._8fE-g, ._2v02G, ._12pGw strong, ._2LRBk, ._1goQ0, ._1Wv89, ._2MoEz, ._3FeAD ._3u328, .ZCg9j, ._3VIru {
-    color: #ffffff !important;
+.dark .Qk8nZ, .dark .tzihe, .dark .Jeekp, .dark ._2HHbr, .dark .Sl-9e, .dark ._1zGQT, html[dir=ltr] .dark ._3MYI2, .dark ._1o0MN, .dark ._35Zop:before, .dark ._2JIoO, .dark ._28Bny, .dark ._3H4MS, .dark .xD91K, .dark ._0LqQ, .dark ._3dwyT, .dark input, .dark ::placeholder, .dark ._1qWhd, .dark ._13U-5, .dark ._2V2qB, .dark ._6xQdq, .dark .Fzl83:before, .dark .bHCVK, .dark ._357v7, .dark select, .dark ._3u328 .copyable-text .selectable-text, .dark ._1wt6r, .dark ._19vo_, .dark ._1drsQ, .dark .kiodY .kyJvR, .dark .a7otO, .dark ._3qb2N, .dark ._2gliA, .dark .landing-title, .dark ._3uHCS, .dark div[class="_2Bfgm _2MyYN"], .dark .i1XSV._3Q3ui, .dark .jLybP:before, .dark .Y1iVg, .dark ._2XHj8 .nGgVY, .dark ._3RQIp, .dark ._2cR8w, .dark ._17hud, .dark .JmH7x, .dark ._2IHkF, .dark ._3JxFB, .dark ._23MBZ, html[dir] .dark ._3fktq, .dark ._1lxsr, .dark ._2NdXo, .dark ._8fE-g, .dark ._2v02G, .dark ._12pGw strong, .dark ._2LRBk, .dark ._1goQ0, .dark ._1Wv89, .dark ._2MoEz, .dark ._3FeAD ._3u328, .dark .ZCg9j, .dark ._3VIru {
+    color: white !important;
 }
 
-._2heX1 {
-    color: #081B33 !important;
+.dark ._2heX1 {
+    color: var(--Maastricht-Blue) !important;
 }
 
-html[dir] .jZhyM {
+.dark .color-6 {
+    color: var(--Maize) !important;
+}
+
+.dark .bg-color-6 {
+    background-color: var(--Maize) !important
+}
+.dark ._1WD8C ._2DP8_{
+    opacity: 1;
+}
+
+html[dir] .dark .jZhyM {
     border-radius: 0% !important;
 }
 
-._1qNwV a, ._3Nnrl, ._23_1v {
-    color: #B8860B !important;
+.dark ._1qNwV a, .dark ._3Nnrl, .dark ._23_1v {
+    color: var(--Dark-Goldenrod) !important;
 }
 
-a, html[dir] .color-1, .r7sRK, .matched-text, ._3he1q, ._1T8rb, ._2wn58, html[dir=ltr] ._1uQFN, .ZObjg, .Ir_Ne, ._1Jc9f, .FPZFa, ._2ZAIy {
-    color: #DAA520 !important;
+.dark a, html[dir] .dark .color-1, .dark .r7sRK, /*.dark .matched-text,*/ .dark ._3he1q, .dark ._1T8rb, .dark ._2wn58, .dark .Ir_Ne, .dark ._1Jc9f, .dark .FPZFa, .dark ._2ZAIy {
+    color: var(--Goldenrod) !important;
 }
 
-html[dir] .bg-color-1, html[dir] ._3PQ7V:hover, html[dir] .P6z4j, html[dir] .Orl3a, html[dir] ._27U_m, html[dir] ._1g8sv, html[dir] ._1WD8C {
-    background-color: #DAA520 !important;
+html[dir] .dark .bg-color-1, html[dir] .dark ._3PQ7V:hover, html[dir] .dark .P6z4j, html[dir] .dark .Orl3a, html[dir] .dark ._27U_m, html[dir] .dark ._1g8sv, html[dir] .dark ._1WD8C {
+    background-color: var(--Goldenrod) !important;
 }
 
-html[dir] ._3UTE3 {
-    border-color: #767D92 !important;
+html[dir] .dark ._3UTE3 {
+    border-color: var(--Slate-Gray) !important;
 }
 
-._2xbq0 {
+.dark ._2xbq0 {
     color: inherit !important;
 }
 
-html[dir] ._23_1v:hover, html[dir] ._3BqnP._3VXiW, html[dir] .message-in ._2Wx_5, html[dir] ._1sFYw, html[dir] ._2UaNq._3mMX1, html[dir] .eiCXe, html[dir] ._2zCfw, html[dir] ._1WMT2._1lakC, html[dir] ._1WMT2._2nA3s, html[dir] ._26JG5:hover, option, html[dir] ._2hMsh, html[dir] ._1i7uJ, html[dir] .message-out ._2Wx_5, html[dir] .gxf3C, html[dir] .message-in ._2Hp95 ._3qAvH, html[dir] .a7otO, html[dir] ._2sOZc, html[dir] ._3KRbU, html[dir] .message-out ._2Hp95 ._3qAvH {
-    background-color: #2F4562 !important;
+html[dir] .dark ._23_1v:hover, html[dir] .dark ._3BqnP._3VXiW, html[dir] .dark .message-in ._2Wx_5, html[dir] .dark ._1sFYw, html[dir] .dark ._2UaNq._3mMX1, html[dir] .dark .eiCXe, html[dir] .dark ._2zCfw, html[dir] .dark ._1WMT2._1lakC, html[dir] .dark ._1WMT2._2nA3s, html[dir] .dark ._26JG5:hover, .dark option, html[dir] .dark ._2hMsh, html[dir] .dark ._1i7uJ, html[dir] .dark .message-out ._2Wx_5, html[dir] .dark .gxf3C, html[dir] .dark .message-in ._2Hp95 ._3qAvH, html[dir] .dark .a7otO, html[dir] .dark ._2sOZc, html[dir] .dark ._3KRbU, html[dir] .dark .message-out ._2Hp95 ._3qAvH {
+    background-color: var(--Police-Blue) !important;
 }
 
-._3PQ7V, ._3MYI2, ._3jHKU, .P6z4j, .Y1iVg._3caqI, ._3D31H, ._22oFl, ._1WD8C {
-    color: #081B33 !important;
+.dark ._3PQ7V, .dark ._3MYI2, .dark ._3jHKU, .dark .P6z4j, .dark .Y1iVg._3caqI, .dark ._3D31H, .dark ._22oFl, .dark ._1WD8C {
+    color: var(--Maastricht-Blue) !important;
 }
 
-html[dir] ._2n0jo, html[dir] ._1WMT2._1lakC:after, html[dir] ._3Jvyf, html[dir] ._2hHc6, html[dir] .ZP8RM, html[dir] ._1HjMu, html[dir] .cGLoy, html[dir] ._2UaNq, html[dir] .r7sRK, html[dir] ._1YoG6, .rK2ei, html[dir] ._1w-mX, html[dir] ._2LSbZ, html[dir] ._26JG5, html[dir] ._3fs0K, html[dir] ._2i7Ej, html[dir] ._13mgZ, html[dir] ._2avTY, html[dir] ._2Qm0c, html[dir] ._1mJO-, html[dir=ltr] ._3HCkv, html[dir=rtl] ._3HCkv, html[dir] .RxbUw, html[dir] .kiodY, html[dir=ltr] ._2xINO, html[dir] ._2aUit, html[dir] ._3vndg, html[dir] .s4BtI, html[dir] ._19YfI, html[dir] .jqdrp, html[dir] ._1ebw2, html[dir] .OWYLS, html[dir] ._2sn3C, html[dir] ._3fktq, html[dir] .landing-main {
-    background-color: #152642 !important;
+html[dir] .dark ._2n0jo, html[dir] .dark ._1WMT2._1lakC:after, html[dir] .dark ._3Jvyf, html[dir] .dark ._2hHc6, html[dir] .dark .ZP8RM, html[dir] .dark ._1HjMu, html[dir] .dark .cGLoy, html[dir] .dark ._2UaNq, html[dir] .dark .r7sRK, html[dir] .dark ._1YoG6, .dark .rK2ei, html[dir] .dark ._1w-mX, html[dir] .dark ._2LSbZ, html[dir] .dark ._26JG5, html[dir] .dark ._3fs0K, html[dir] .dark ._2i7Ej, html[dir] .dark ._13mgZ, html[dir] .dark ._2avTY, html[dir] .dark ._2Qm0c, html[dir] .dark ._1mJO-, html[dir=ltr] .dark ._3HCkv, html[dir=rtl] .dark ._3HCkv, html[dir] .dark .RxbUw, html[dir] .dark .kiodY, html[dir=ltr] .dark ._2xINO, html[dir] .dark ._2aUit, html[dir] .dark ._3vndg, html[dir] .dark .s4BtI, html[dir] .dark ._19YfI, html[dir] .dark .jqdrp, html[dir] .dark ._1ebw2, html[dir] .dark .OWYLS, html[dir] .dark ._2sn3C, html[dir] .dark ._3fktq, html[dir] .dark .landing-main {
+    background-color: var(--Yankees-Blue) !important;
 }
 
-html[dir] ._3Fq9Y {
-    background-color: rgba(21, 38, 66, .85) !important;
+html[dir] .dark ._3Fq9Y {
+    background-color: rgba(var(--Yankees-Blue-Rgb), .85) !important;
 }
 
-div[tabindex="-1"] ._1WMT2 {
-    border-top: 1px solid #2F4562 !important;
+.dark div[tabindex="-1"] ._1WMT2 {
+    border-top: 1px solid var(--Police-Blue) !important;
 }
 
-html[dir] ._13mgZ, html[dir] ._2WwbV {
-    border: 1px solid #ffffff !important;
+html[dir] .dark ._13mgZ, html[dir] .dark ._2WwbV {
+    border: 1px solid white !important;
 }
 
-html[dir] ._2LSbZ {
-    box-shadow: 0 1px 3px #152642 !important;
+html[dir] .dark ._2LSbZ {
+    box-shadow: 0 1px 3px var(--Yankees-Blue) !important;
 }
 
-html[dir] ._2rGVQ {
-    background: #152642 !important;
+html[dir] .dark ._2rGVQ {
+    background: var(--Yankees-Blue) !important;
 }
 
-html[dir] ._2UaNq._3mMX1:after, html[dir] ._2UaNq:hover:after, .hover {
+html[dir] .dark ._2UaNq._3mMX1:after, html[dir] .dark ._2UaNq:hover:after, .dark .hover {
     border-top: none !important;
     border-bottom: none !important;
 }
 
-html[dir] ._2UaNq {
-    border-top: 1px solid #2F4562 !important;
-    border-bottom: 1px solid #2F4562 !important;
+html[dir] .dark ._2UaNq {
+    border-top: 1px solid var(--Police-Blue) !important;
+    border-bottom: 1px solid var(--Police-Blue) !important;
 }
 
-html[dir] .cGLoy {
-    border-bottom: 1px solid #2F4562 !important;
+html[dir] .dark .cGLoy {
+    border-bottom: 1px solid var(--Police-Blue) !important;
 }
 
-._3yudO {
-    stroke: #DAA520 !important;
+.dark ._3yudO {
+    stroke: var(--Goldenrod) !important;
 }
 
-._1t84_._3VIru, .ZCg9j.Ryz_m {
-    color: #DAA520 !important;
+.dark ._1t84_._3VIru, .dark .ZCg9j.Ryz_m {
+    color: var(--Goldenrod) !important;
 }
 
-html[dir] ._2WP9Q, html[dir] ._2n0jo {
+html[dir] .dark ._2WP9Q, html[dir] .dark ._2n0jo {
     border-top: none !important;
 }
 
-.X7YrQ {
+.dark .X7YrQ {
     z-index: 0 !important;
 }
 
-html[dir] ._3p0T6 {
-    background-color: #767D92 !important;
+html[dir] .dark ._3p0T6 {
+    background-color: var(--Slate-Gray) !important;
 }
 
-html[dir=ltr] ._2DxRd {
+html[dir=ltr] .dark ._2DxRd {
     margin-left: 0 !important;
 }
 
-html[dir] ._2DxRd {
-    border-top-color: #767D92 !important;
+html[dir] .dark ._2DxRd {
+    border-top-color: var(--Slate-Gray) !important;
 }
 
-html[dir] ._26JG5+._26JG5 ._27Ie2, html[dir] ._26JG5:hover+._26JG5:before {
+html[dir] .dark ._26JG5+._26JG5 ._27Ie2, html[dir] .dark ._26JG5:hover+._26JG5:before {
     border-top: none !important;
 }
 
-html[dir=ltr] ._2i7Ej {
+html[dir=ltr] .dark ._2i7Ej {
     border-left: none !important;
 }
 
-._1ygtt, ._3MbsG {
-    border-right-color: #081B33 !important;
+.dark ._3MbsG {
+    border-right-color: var(--Maastricht-Blue) !important;
 }
 
-._1ygtt {
-    border-bottom-color: #081B33 !important;
+html[dir] .dark .lC2xi {
+    background-color: rgba(var(--Maastricht-Blue-Rgb), .6) !important;
 }
 
-html[dir] .lC2xi {
-    background-color: rgba(8, 27, 51, .6) !important;
+html[dir] .dark ._8C3uJ {
+    border: 5px dashed rgba(var(--White-Rgb), .3) !important;
 }
 
-html[dir] ._8C3uJ {
-    border: 5px dashed rgba(255, 255, 255, .3) !important;
+.dark ._8C3uJ {
+    color: rgba(var(--White-Rgb), .3) !important;
 }
 
-._8C3uJ {
-    color: rgba(255, 255, 255, .3) !important;
+html[dir] .dark ._5UNoc ._3hnO5 {
+    border-bottom-color: var(--Dark-Goldenrod) !important;
 }
 
-html[dir] ._5UNoc ._3hnO5 {
-    border-bottom-color: #B8860B !important;
+html[dir=ltr] .dark ._3fs0K {
+    border-left-color: var(--Yankees-Blue) !important;
 }
 
-html[dir=ltr] ._3fs0K {
-    border-left-color: #152642 !important;
+html[dir=ltr] .dark ._1qNwV {
+    border-left: 1px solid rgba(var(--Yankees-Blue-Rgb), 1) !important;
 }
 
-html[dir=ltr] ._1qNwV {
-    border-left: 1px solid rgba(21, 38, 66, 1) !important;
+.dark ._1Zo-R {
+    border-color: rgba(var(--White-Rgb), .50)!important;
 }
 
-._1Zo-R {
-    border-color: rgba(255, 255, 255, .50)!important;
+html[dir=ltr] .dark ._15CAo._3EQsG {
+    background: linear-gradient(90deg, hsla(94, 78%, 87%, 0) 0, var(--Police-Blue) 50%) !important;
 }
 
-html[dir=ltr] ._15CAo._3EQsG {
-    background: linear-gradient(90deg, hsla(94, 78%, 87%, 0) 0, #2F4562 50%) !important;
+html[dir=ltr] .dark ._15CAo._2Nkc4 {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, var(--Police-Blue) 50%) !important;
 }
 
-html[dir=ltr] ._15CAo._2Nkc4 {
-    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #2F4562 50%) !important;
+html[dir] .dark ._2a2hS {
+    background-color: white !important;
 }
 
-html[dir] ._2a2hS {
-    background-color: #ffffff !important;
+.dark .XqrVN {
+    stroke: var(--Goldenrod) !important;
 }
 
-.XqrVN {
-    stroke: #DAA520 !important;
+html[dir=ltr] .dark ._1_keJ {
+    border-left-color: var(--Maastricht-Blue) !important;
 }
 
-html[dir=ltr] ._1_keJ {
-    border-left-color: #081B33 !important;
+html[dir=ltr] .dark ._1F9Ap, html[dir=rtl] .dark ._1F9Ap {
+    text-shadow: 0px 0px 0.5px white !important;
 }
 
-html[dir=ltr] ._1F9Ap, html[dir=rtl] ._1F9Ap {
-    text-shadow: 0px 0px 0.5px #ffffff !important;
+.dark ._1F9Ap:before {
+    color: var(--Slate-Gray) !important;
 }
 
-._1F9Ap:before {
-    color: #767D92 !important;
+html[dir] .dark ._1AUdd._1SsXF, html[dir] .dark ._3qblR._1SsXF, html[dir] .dark ._2a6mc, html[dir] .dark ._1o6AT ._1mrMQ, html[dir] .dark ._3cukQ ._1mrMQ, html[dir] .dark .message-out ._2HTIU {
+    background-color: var(--Dark-Electric-Blue) !important;
 }
 
-html[dir] ._1AUdd._1SsXF, html[dir] ._3qblR._1SsXF, html[dir] ._2a6mc, html[dir] ._1o6AT ._1mrMQ, html[dir] ._3cukQ ._1mrMQ, ._3LVMN, html[dir] .message-out ._2HTIU, .Drque {
-    background-color: #506680 !important;
-}
-
-.fzCXy {
+.dark .fzCXy {
     opacity: .12 !important;
 }
 
-html[dir] ._2HyTU {
+html[dir] .dark ._2HyTU {
     background-color: transparent !important;
 }
 
-html[dir] ._2AqZl {
-    background-color: rgba(21, 38, 66, .6) !important;
+html[dir] .dark ._2AqZl {
+    background-color: rgba(var(--Yankees-Blue-Rgb), .6) !important;
 }
 
-html[dir] ._3fs0K:after {
+html[dir] .dark ._3fs0K:after {
     background-color: transparent !important;
     border-bottom: 0px solid rgba(0, 0, 0, .08) !important;
 }
 
-html[dir] ._1Jzz1, html[dir] ._1KDYa, html[dir] ._2KgjI {
-    background-color: #152642 !important;
+html[dir] .dark ._1Jzz1, html[dir] .dark ._1KDYa, html[dir] .dark ._2KgjI {
+    background-color: var(--Yankees-Blue) !important;
 }
 
-html[dir] .app {
+html[dir] .dark .app {
     background-image: none !important;
 }
 
-html[dir] ._3Xx0y {
-    background-color: rgba(184, 134, 11, .25) !important;
-    border-bottom: rgba(184, 134, 11, .08) !important;
-    border-top: 1px solid rgba(184, 134, 11, .15) !important;
+html[dir] .dark ._3Xx0y {
+    background-color: rgba(var(--Dark-Goldenrod-Rgb), .25) !important;
+    border-bottom: rgba(var(--Dark-Goldenrod-Rgb), .08) !important;
+    border-top: 1px solid rgba(var(--Dark-Goldenrod-Rgb), .15) !important;
 }
 
-._3Xx0y, ._2lKjK, .BJa6O, ._3FeAD .wjdTm, ._2xHOS, ._3Yulp, ._26pkE {
-    color: #ffffff !important;
+.dark ._3Xx0y, .dark ._2lKjK, .dark .BJa6O, .dark ._3FeAD .wjdTm, .dark ._2xHOS, .dark ._3Yulp, .dark ._26pkE {
+    color: white !important;
 }
 
-html[dir] ._1lo-H {
-    background-color: #B8860B !important;
+html[dir] .dark ._1lo-H {
+    background-color: var(--Dark-Goldenrod) !important;
 }
 
-html[dir] .IMn_C, html[dir] ._2ILbv ._1Dfrr:hover {
-    background-color: #081B33 !important;
+html[dir] .dark .IMn_C, html[dir] .dark ._2ILbv ._1Dfrr:hover {
+    background-color: var(--Maastricht-Blue) !important;
 }
 
-html[dir] .qlhJH hr {
-    border-top: 1px solid #506680 !important;
+html[dir] .dark .qlhJH hr {
+    border-top: 1px solid var(--Dark-Electric-Blue) !important;
 }
 
-html[dir=ltr] ._2UaNq._30Q1W ._3H4MS {
-    color: #ffffff !important;
-    text-shadow: 0px 0px 0.5px #ffffff !important;
+html[dir=ltr] .dark ._2UaNq._30Q1W ._3H4MS {
+    color: white !important;
+    text-shadow: 0px 0px 0.5px white !important;
 }
 
-html[dir] ._1PENu {
-    border-top: 1px solid #506680 !important;
+html[dir] .dark ._1PENu {
+    border-top: 1px solid var(--Dark-Electric-Blue) !important;
 }
 
-html[dir=ltr] ._30sf0 {
+html[dir=ltr] .dark ._30sf0 {
     border-left: none !important;
 }
-
-html[dir] .FPZFa {
-    border: 1px solid #DAA520 !important;
+html[dir] .dark ._2I-yY {
+    background-color: none;
 }
 
-html[dir] .I72vi {
-    background-color: #152642 !important;
+html[dir] .dark .FPZFa {
+    border: 1px solid var(--Goldenrod) !important;
 }
 
-.I72vi {
+html[dir] .dark .I72vi {
+    background-color: var(--Yankees-Blue) !important;
+}
+
+.dark .I72vi {
     overflow: auto !important;
 }
 
-html[dir] ._2RT36 {
-    border: 5px solid #ffffff !important;
+html[dir] .dark ._2RT36 {
+    border: 5px solid white !important;
 }
 
-html[dir] ._2Fvnm ._3ogpF {
-    border-bottom: 2px solid #DAA520 !important;
+html[dir] .dark ._2Fvnm ._3ogpF {
+    border-bottom: 2px solid var(--Goldenrod) !important;
 }
 
-.Am8s6 {
-    color: rgba(255, 255, 255, .5) !important;
+.dark .Am8s6 {
+    color: rgba(var(--White-Rgb), .5) !important;
 }
 
 /* #region media */
 
 @media screen and (min-width: 1301px) {
-    html[dir=ltr] ._3fs0K {
-        border-right-color: #152642 !important;
+    html[dir=ltr] .dark ._3fs0K {
+        border-right-color: var(--Yankees-Blue) !important;
     }
 }
 
 @media screen and (min-width: 1301px) {
-    .two ._1jxtm {
+    .dark .two ._1jxtm {
         flex: 71% !important;
     }
 }
 
 /* #endregion media */
 
-/* #region Input Type Range */
-
-._38Akx ._30LFW::-webkit-slider-runnable-track {
-    /*Circle Right*/
-    background-color: #F1C84C !important;
-}
-
-._38Akx ._30LFW::-webkit-slider-thumb {
-    /*Circle*/
-    background-color: #B8860B !important;
-}
-
-._38Akx ._1N8Pv {
-    /*Circle Left*/
-    background-color: #B8860B !important;
-}
-
-/* #endregion Input Type Range */
-
-/* #region Progress */
-
-progress {
-    background: #506680 !important;
-}
-
-progress::-webkit-progress-value {
-    background: #DAA520 !important;
-}
-
-progress::-moz-progress-bar {
-    background: #DAA520 !important;
-}
-
-progress::-webkit-progress-value {
-    background: #DAA520 !important;
-}
-
-progress::-webkit-progress-bar {
-    background: #506680 !important;
-}
-
-/* #endregion Progress*/
-
-/* #region Image */
-
-[data-asset-intro-image] {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/intro-connection_c98cc75f2aa905314d74375a975d2cf2.png) !important;
-}
-
-html[dir=ltr] .message-out .tail-container {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/right.png) !important;
-}
-
-html[dir=ltr] .message-in .tail-container, html[dir=ltr] .message-in .tail-override-left .tail-container, html[dir=ltr] .message-in .tail-override-right .tail-container, html[dir=ltr] .message-out .tail-override-right .tail-container, html[dir=ltr] .message-out .tail-override-left .tail-container {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/left.png) !important;
-}
-
-[data-asset-chat-background] {
-    /*.fzCXy*/
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81a.png) !important;
-}
-
-._3XqhJ {
-    background-image: url(https://raw.githubusercontent.com/Cuberkam/Whatsapp_Web_Dark_Mode/master/images/animated-doodle_600127bdb5f7627ede5cd4ef320f55b0.png) !important;
-}
-
-/* #endregion Image */
-
 /* #region Icons */
-
-.ZCg9j, ._3VIru, ._1DnZY, ._3I7nT, ._3DxjC, ._1ZMSM, .WVFpp, ._2-qoA, ._2UaNq._3mMX1 .xD91K, ._1mGV6, html[dir] ._2UaNq._30Q1W .xD91K, .ofSdH, .kiodY .qfKkX, .hjJpn, ._3M-N- {
-    color: #ffffff !important;
+.dark span[data-icon="chevron-right-text"] path{
+    fill: hsla(220, 4%, 84%, .97) !important;
 }
 
-._1g8sv.NOJWi {
-    color: #081B33 !important;
+.dark .ZCg9j, .dark ._3VIru, .dark ._1DnZY, .dark ._3I7nT, .dark ._3DxjC, .dark ._1ZMSM, .dark .WVFpp, .dark ._2-qoA, .dark ._2UaNq._3mMX1 .xD91K, .dark ._1mGV6, html[dir] .dark ._2UaNq._30Q1W .xD91K, .dark .ofSdH, .dark .kiodY .qfKkX, .dark .hjJpn, ._3M-N- {
+    color: white !important;
 }
 
-._3rqs1 {
-    color: #B8860B !important;
+.dark ._1g8sv.NOJWi {
+    color: var(--Maastricht-Blue) !important;
 }
 
-.B9BIa path.background, span[data-icon="default-group"] path[d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25z"] {
-    fill: #506680 !important;
+.dark ._3rqs1 {
+    color: var(--Dark-Goldenrod) !important;
 }
 
-html[dir] .qfKkX>span[data-icon="x-light"] path, .qfKkX>span[data-icon="back-light"] path, span[data-icon="send-light"] path, span[data-icon="audio-download"] path, ._1g8sv.NOJWi>span[data-icon="checkmark-light"] path, ._1g8sv>span[data-icon="checkmark-light"] path, ._2MUsN>span[data-icon="x-alt-small"] path, ._1g8sv.NOJWi>span[data-icon="send-light"] path, span[data-icon="menu-white"] path, span[data-icon="forward-light"] path {
-    fill: #081B33 !important;
+.dark .B9BIa path.background, .dark span[data-icon="default-group"] path[d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25z"] {
+    fill: var(--Dark-Electric-Blue) !important;
+}
+
+.dark span[data-icon="ptt-out-blue"] path[fill="#DDF6C9"], .dark span[data-icon="ptt-in-blue"] path[fill="#FFF"]{
+    fill: var(--Police-Blue) !important;
+}
+
+html[dir] .dark .qfKkX>span[data-icon="x-light"] path, .dark .qfKkX>span[data-icon="back-light"] path, .dark span[data-icon="send-light"] path, .dark span[data-icon="audio-download"] path, .dark ._1g8sv.NOJWi>span[data-icon="checkmark-light"] path, .dark ._1g8sv>span[data-icon="checkmark-light"] path, .dark ._2MUsN>span[data-icon="x-alt-small"] path, .dark ._1g8sv.NOJWi>span[data-icon="send-light"] path, .dark span[data-icon="menu-white"] path, .dark span[data-icon="forward-light"] path, .dark span[data-icon="return-light"] path {
+    fill: var(--Maastricht-Blue) !important;
     fill-opacity: 100% !important;
 }
 
-span[data-icon="audio-download"] path, ._2wn58 svg path {
-    fill: #B8860B !important;
+.dark span[data-icon="audio-download"] path, .dark ._2wn58 svg path {
+    fill: var(--Dark-Goldenrod) !important;
     fill-opacity: 1;
 }
 
-.darwin .-XQxp._1oNFt path, .web .-XQxp._1oNFt path, .win32 .-XQxp._1oNFt path, span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"], ._1DnDx>span[data-icon="checkbox-round-checked"] path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"] {
-    fill: #DAA520 !important;
+.dark .darwin .-XQxp._1oNFt path, .dark .-XQxp._1oNFt path, .dark .win32 .-XQxp._1oNFt path, .dark span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"], .dark ._1DnDx>span[data-icon="checkbox-round-checked"] path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"], .dark span[data-icon="audio-cancel-noborder"] path {
+    fill: var(--Goldenrod) !important;
 }
 
-span[data-icon="audio-play"] path, span[data-icon="audio-pause"] path, ._2VVfP span[data-icon="lock-small"] path, span[data-icon="emoji-input"] path, ._1tyVr span[data-icon="settings-blocked"] path, ._1tyVr>span[data-icon="settings-notifications"] path, ._1tyVr>span[data-icon="settings-wallpaper"] path, ._1tyVr>span[data-icon="settings-help"] path, ._1tyVr>span[data-icon="add-user"] path, span[data-icon="send-light"] path, span[data-icon="forward"] path, span[data-icon="copy"] path, span[data-icon="revoke"] path, span[data-icon="chevron-right-text"] path, html[dir] span[data-icon="recalled-out"] path, html[dir] span[data-icon="recalled-in"] path, html[dir] span[data-icon="status-v3"] path, ._2DGEU>span[data-icon="x-alt"] path, html[dir] span[data-icon="x-alt-small"] path, html[dir] span[data-icon="highly-forwarded"] path, html[dir] span[data-icon="down"] path, html[dir] span[data-icon="forwarded"] path, ._27Kg1>span[data-icon="x"] path, ._27Kg1>span[data-icon="smiley"] path, ._27Kg1>span[data-icon="gif"] path, ._27Kg1>span[data-icon="sticker"] path, span[data-icon="chevron-right-alt"] path, ._3Ux6T span[data-icon="star"] path, ._3f5U8>span[data-icon="x"] path, ._3f5U8>span[data-icon="unstar-btn"] path, ._3f5U8>span[data-icon="delete"] path, ._3f5U8>span[data-icon="star-btn"] path, ._3fktq>span[data-icon="add-alt"] path {
-    fill: #ffffff !important;
+.dark span[data-icon="audio-play"] path, .dark span[data-icon="audio-pause"] path, .dark ._2VVfP span[data-icon="lock-small"] path, .dark span[data-icon="emoji-input"] path, .dark ._1tyVr span[data-icon="settings-blocked"] path, .dark ._1tyVr>span[data-icon="settings-notifications"] path, .dark ._1tyVr>span[data-icon="settings-wallpaper"] path, .dark ._1tyVr>span[data-icon="settings-help"] path, .dark ._1tyVr>span[data-icon="add-user"] path, .dark span[data-icon="send-light"] path, .dark span[data-icon="forward"] path, .dark span[data-icon="copy"] path, .dark span[data-icon="revoke"] path, .dark span[data-icon="chevron-right-text"] path, html[dir] .dark span[data-icon="recalled-out"] path, html[dir] .dark span[data-icon="recalled-in"] path, html[dir] .dark span[data-icon="status-v3"] path, .dark span[data-icon="x-alt"] path, html[dir] .dark span[data-icon="x-alt-small"] path, html[dir] .dark span[data-icon="highly-forwarded"] path, html[dir] .dark span[data-icon="down"] path, html[dir] .dark span[data-icon="forwarded"] path, .dark span[data-icon="x"] path, .dark span[data-icon="smiley"] path, .dark span[data-icon="gif"] path, .dark span[data-icon="sticker"] path, .dark span[data-icon="chevron-right-alt"] path, .dark ._3Ux6T span[data-icon="star"] path, .dark ._3f5U8>span[data-icon="x"] path, .dark ._3f5U8>span[data-icon="unstar-btn"] path, .dark span[data-icon="delete"] path, .dark ._3f5U8>span[data-icon="star-btn"] path, .dark ._3fktq>span[data-icon="add-alt"] path, .dark ._3j8Pd span[data-icon="menu"] path, .dark span[data-icon="download"] path, .dark span[data-icon="plus"] path, .dark span[data-icon="minus"] path, .dark span[data-icon="status-ptt-gray"] path {
+    fill: white !important;
     fill-opacity: 100% !important;
 }
 
@@ -443,12 +543,12 @@ span[data-icon="audio-play"] path, span[data-icon="audio-pause"] path, ._2VVfP s
 
 /* #region Scrollbar */
 
-::-webkit-scrollbar-thumb {
-    background-color: rgba(184, 134, 11) !important;
+.dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--Dark-Goldenrod-Rgb),1) !important;
 }
 
-::-webkit-scrollbar-track {
-    background: #152642 !important;
+.dark ::-webkit-scrollbar-track {
+    background: var(--Yankees-Blue) !important;
 }
 
 /* #endregion Scrollbar */

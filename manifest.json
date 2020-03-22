@@ -1,30 +1,42 @@
 {
   "name": "Lunate Dark Mode",
   "short_name": "LDM",
-  "version": "3.2.23.0",
+  "version": "3.5.0.0",
   "description": "Dark theme for WhatsApp Web",
   "author": "Erkam Kumru",
+  "permissions": ["activeTab", "declarativeContent","storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "content_scripts": [
     {
-      "matches": [
-        "https://web.whatsapp.com/"
-      ],
-      "css": [
-        "style.css"
-      ]
+      "matches": ["https://web.whatsapp.com/"],
+      "js": ["script.js"],
+      "css": ["style.css"]
     }
   ],
-  "browser_action": {
+  "web_accessible_resources": [
+    "images/intro-connection.png",
+    "images/right.png",
+    "images/left.png",
+    "images/animated-doodle.png",
+    "images/bg-chat-tile.png"
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
     "default_icon": {
-      "128": "icon/whatsapp_dark_mode_128.png"
-    }
+      "19": "icon/lunate_dark_19.png",
+      "38": "icon/lunate_dark_38.png"
+    },
+    "default_title": "Lunate Dark Mode"
   },
   "icons": {
-    "16": "icon/whatsapp_dark_mode_16.png",
-    "32": "icon/whatsapp_dark_mode_32.png",
-    "48": "icon/whatsapp_dark_mode_48.png",
-    "64": "icon/whatsapp_dark_mode_64.png",
-    "128": "icon/whatsapp_dark_mode_128.png"
+    "16": "icon/lunate_16.png",
+    "32": "icon/lunate_32.png",
+    "48": "icon/lunate_48.png",
+    "64": "icon/lunate_64.png",
+    "128": "icon/lunate_128.png"
   },
   "manifest_version": 2
 }
