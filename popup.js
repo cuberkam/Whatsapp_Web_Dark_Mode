@@ -21,6 +21,10 @@ document.getElementById('check').onclick = function () {
     text3.classList.add("color-2");
     text3.classList.remove("color-1");
     text3.innerHTML = "ENABLE";
+    chrome.browserAction.setIcon({path: {
+      "19": "icon/lunate_light_19.png",
+      "38": "icon/lunate_light_38.png"
+    }});
   }
   else {
     body.classList.remove("bg-color-2");
@@ -33,6 +37,10 @@ document.getElementById('check').onclick = function () {
     text3.classList.remove("color-2");
     text3.classList.add("color-1");
     text3.innerHTML = "DISABLE";
+    chrome.browserAction.setIcon({path: {
+      "19": "icon/lunate_dark_19.png",
+      "38": "icon/lunate_dark_38.png"
+    }});
   }
 }
 //#endregion Butona basılınca gerçekleşecek olaylar
@@ -51,6 +59,10 @@ chrome.storage.sync.get(['checked'], function (data) {
     text3.classList.add("color-2");
     text3.classList.remove("color-1");
     text3.innerHTML = "ENABLE";
+    chrome.browserAction.setIcon({path: {
+      "19": "icon/lunate_light_19.png",
+      "38": "icon/lunate_light_38.png"
+    }});
   }
   else {
     body.classList.remove("bg-color-2");
@@ -63,6 +75,10 @@ chrome.storage.sync.get(['checked'], function (data) {
     text3.classList.remove("color-2");
     text3.classList.add("color-1");
     text3.innerHTML = "DISABLE";
+    chrome.browserAction.setIcon({path: {
+      "19": "icon/lunate_dark_19.png",
+      "38": "icon/lunate_dark_38.png"
+    }});
   }
 });
 //#endregion Site terk edildikten sonra hafızadaki değerin uygulanması

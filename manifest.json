@@ -1,10 +1,10 @@
 {
   "name": "Lunate Dark Mode",
   "short_name": "LDM",
-  "version": "3.5.0.0",
+  "version": "3.6",
   "description": "Dark theme for WhatsApp Web",
   "author": "Erkam Kumru",
-  "permissions": ["activeTab", "declarativeContent","storage"],
+  "permissions": ["storage"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -23,7 +23,7 @@
     "images/animated-doodle.png",
     "images/bg-chat-tile.png"
   ],
-  "page_action": {
+  "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
       "19": "icon/lunate_dark_19.png",

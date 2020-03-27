@@ -14,7 +14,9 @@
     --Goldenrod:#DAA520;
     --Goldenrod-Rgb:218, 165, 32;
     --Maize:#F1C84C;
+    --Maize-Rgb:241, 200, 76;
 
+    --White: #FFFFFF;
     --White-Rgb: 255, 255, 255;
 }
 body.dark {
@@ -29,7 +31,56 @@ html[dir] .dark ::-webkit-scrollbar-thumb {
 html[dir] .dark ::-webkit-scrollbar-track {
     background-color: transparent
 }
+
 .dark {
+    --panel-background-active: var(--Police-Blue) !important;
+    --gray-200: var(--Goldenrod) !important;
+    --butterbar-background-connection: var(--Goldenrod) !important;
+    --media-viewer-button-background: var(--Police-Blue) !important;
+    --media-viewer-background-rgb: var(--Yankees-Blue-Rgb) !important;
+    --media-viewer-background: var(--Yankees-Blue) !important;
+    --chat-marker-admin: var(--Goldenrod) !important;
+    --chat-marker-admin-border: var(--Goldenrod) !important;
+    --white: var(--Police-Blue) !important;
+    --unread-background: var(--Goldenrod) !important;
+    --unread-background-rgb: var(--Goldenrod-Rgb) !important;
+    --unread-bar-background: rgba(var(--Goldenrod-Rgb), .25) !important;
+    --unread-bar-background-rgb: var(--Goldenrod-Rgb) !important;
+    --primary-strong: var(--White) !important;
+    --menu-tabs-list-active: var(--Dark-Goldenrod) !important;
+    --outgoing-background-rgb: var(--Police-Blue-Rgb) !important;
+    --incoming-background-rgb: var(--Police-Blue-Rgb) !important;
+    --green-deep-rgb: var(--Goldenrod-Rgb) !important;
+    --teal: var(--Goldenrod) !important;
+    --teal-rgb: var(--Goldenrod-Rgb) !important;
+    --teal-pale: var(--Goldenrod) !important;
+    --teal-lighter: var(--Goldenrod) !important;
+    --green: var(--Goldenrod) !important;
+    --compose-background: var(--Yankees-Blue) !important;
+    --compose-background-rgb: var(--Yankees-Blue-Rgb) !important;
+    --inverse: var(--White) !important;
+    --gray-600: var(--White) !important;
+    --button-round-background: var(--Goldenrod) !important;
+    --panel-background-deep: var(--Yankees-Blue) !important;
+    --panel-background-hover: var(--Yankees-Blue) !important;
+    --rich-text-panel-background: var(--Maastricht-Blue) !important;
+    --icon-fixed: var(--White) !important;
+    --border-input-active: var(--Goldenrod) !important;
+    --primary: var(--White) !important;
+    --dropdown-background: var(--Yankees-Blue) !important;
+    --overlay-rgb: var(--Police-Blue-Rgb) !important;
+    --outgoing-background: var(--Police-Blue) !important;
+    --incoming-background: var(--Police-Blue) !important;
+    --notification-text: var(--White) !important;
+    --system-message-text: var(--White) !important;
+    --system-message-background: var(--Police-Blue) !important;
+    --notification-e2e-background: var(--Police-Blue) !important;
+    --conversation-panel-background: var(--Maastricht-Blue) !important;
+    --panel-background-colored: var(--Goldenrod) !important;
+    --border-stronger: transparent important;
+    --modal-backdrop-solid: var(--Maastricht-Blue) !important;
+    --modal-background: var(--Police-Blue) !important;
+    --butterbar-background-update: var(--Goldenrod) !important;
     --active-tab-marker: var(--Dark-Goldenrod) !important;
     --active-tab-marker-rgb: var(--Dark-Goldenrod-Rgb) !important;
     --app-background-stripe: var(--Dark-Goldenrod) !important;
@@ -60,8 +111,8 @@ html[dir] .dark ::-webkit-scrollbar-track {
     --border-default-rgb: var(--Police-Blue-Rgb) !important;
     --butterbar-background-default: var(--Police-Blue) !important;
     --butterbar-background-default-rgb: var(--Police-Blue-Rgb) !important;
-    --butterbar-primary: hsla(220, 4%, 84%, .97) !important;
-    --butterbar-primary-rgb: 213, 214, 216 !important;
+    --butterbar-primary: var(--White) !important;
+    --butterbar-primary-rgb: var(--White-Rgb) !important;
     --butterbar-secondary: hsla(220, 4%, 84%, .97) !important;
     --butterbar-secondary-rgb: 213, 214, 216 !important;
     --button-primary-background: var(--Dark-Goldenrod) !important;
@@ -70,10 +121,11 @@ html[dir] .dark ::-webkit-scrollbar-track {
     --button-primary-background-hover-rgb: var(--Goldenrod-Rgb) !important;
     --button-secondary: var(--Goldenrod) !important;
     --button-secondary-rgb: var(--Goldenrod-Rgb) !important;
+    --button-secondary-hover: var(--Goldenrod) !important;
     --icon: #d5d6d8f7 !important;
     --icon-rgb: 213, 214, 216 !important;
     --icon-lighter: hsla(220, 4%, 84%, .97) !important;
-    --icon-lighter-rgb: 213, 214, 216 !important;
+    --icon-lighter-rgb: 255, 255, 255 !important;
     --input-placeholder: #d5d6d8f7 !important;
     --input-placeholder-rgb: 213, 214, 216 !important;
     --intro-background: var(--Maastricht-Blue) !important;
@@ -105,15 +157,21 @@ html[dir] .dark ::-webkit-scrollbar-track {
     --tooltip-background-rgb: 184.25, 134.25, 11.25 !important;
     --icon-ack: var(--Goldenrod) !important;
     --icon-ack-rgb: var(--Goldenrod-Rgb) !important;
-    --teal: var(--Goldenrod) !important;
-    --teal-rgb: var(--Goldenrod-Rgb) !important;
     --panel-background-colored-deeper: var(--Dark-Goldenrod) !important;
     --panel-background-colored-deeper-rgb: var(--Dark-Goldenrod-Rgb) !important;
     --highlight:var(--Goldenrod) !important;
 }
-html[dir] .dark ._1qNwV:after {
+.dark ._1x_c3.bRYFY span[data-icon="smiley"] path,.dark ._1x_c3.bRYFY span[data-icon="gif"] path, .dark ._1x_c3.bRYFY span[data-icon="sticker"] path {
+    fill: var(--Goldenrod) !important;
+}
+html[dir] .dark ._1qNwV:after, html[dir] .dark ._2zynu:after {
     border-top: 6px solid var(--Dark-Goldenrod) !important;
 }
+
+html[dir] .dark .MVjBr._3e2jK[style] {
+    background-color: var(--Police-Blue) !important;
+}
+
 html[dir] .dark .eiCXe{
     background-color: var(--Police-Blue) !important;
 }
@@ -127,7 +185,10 @@ html[dir] .dark ._2WP9Q, html[dir] .dark ._2n0jo {
 .dark ._3DxjC {
     color: rgba(var(--icon-lighter-rgb),1) !important;
 }
-html[dir] .dark .ZP8RM{
+html[dir] .dark .ZP8RM, html[dir] .dark ._3B9bf{
+    background-color: var(--Yankees-Blue) !important;
+}
+html[dir] .dark .gQzdc{
     background-color: var(--Yankees-Blue) !important;
 }
 
@@ -163,7 +224,7 @@ html[dir=ltr] .dark ._1WMT2:before {
     z-index: 0 !important;
 }
 
-html[dir] .dark ._1WMT2._2V_Wj, html[dir] .dark ._3yth3, html[dir] .dark ._26pkE {
+html[dir] .dark ._1WMT2._2V_Wj, html[dir] .dark ._3yth3, html[dir] .dark ._26pkE,html[dir] .dark ._2MSJr {
     background-color: var(--Police-Blue) !important;
 }
 
@@ -199,7 +260,7 @@ html[dir] .dark ._1WMT2:before, html[dir] .dark ._3RWII, html[dir] .dark ._70TS5
     border-color: var(--Dark-Goldenrod) !important;
 }
 
-html[dir] .dark ._1qNwV, html[dir] .dark ._3RiLE, #initial_startup, #startup, html[dir] .dark ._3Fq9Y.iEUx2, html[dir] .dark ._1T8rb, html[dir] .dark .NuujD, html[dir] .dark .NeQRT, .dark ._2l-YP:first-child {
+html[dir] .dark ._1qNwV, html[dir] .dark ._3RiLE, #initial_startup, #startup, html[dir] .dark ._3Fq9Y.iEUx2, html[dir] .dark ._1T8rb, html[dir] .dark .NuujD, html[dir] .dark .NeQRT, .dark ._2l-YP:first-child, .dark .CDuBw:nth-child(1) {
     background-color: var(--Maastricht-Blue) !important;
 }
 
@@ -330,6 +391,12 @@ html[dir=ltr] .dark ._2i7Ej {
 
 .dark ._3MbsG {
     border-right-color: var(--Maastricht-Blue) !important;
+}
+html[dir=ltr] .dark ._1KfC8{
+    border-right-color: var(--White) !important;
+}
+html[dir] .dark ._1KfC8{
+    border-bottom-color: var(--White) !important;
 }
 
 html[dir] .dark .lC2xi {
@@ -467,8 +534,11 @@ html[dir] .dark .I72vi {
     overflow: auto !important;
 }
 
-html[dir] .dark ._2RT36 {
+html[dir] .dark ._2RT36, .dark ._11ozL {
     border: 5px solid white !important;
+}
+html[dir=ltr] .dark ._2zynu{
+    border-left: 1px solid var(--Maastricht-Blue);
 }
 
 html[dir] .dark ._2Fvnm ._3ogpF {
@@ -521,7 +591,7 @@ html[dir] .dark ._2Fvnm ._3ogpF {
 }
 
 html[dir] .dark .qfKkX>span[data-icon="x-light"] path, .dark .qfKkX>span[data-icon="back-light"] path, .dark span[data-icon="send-light"] path, .dark span[data-icon="audio-download"] path, .dark ._1g8sv.NOJWi>span[data-icon="checkmark-light"] path, .dark ._1g8sv>span[data-icon="checkmark-light"] path, .dark ._2MUsN>span[data-icon="x-alt-small"] path, .dark ._1g8sv.NOJWi>span[data-icon="send-light"] path, .dark span[data-icon="menu-white"] path, .dark span[data-icon="forward-light"] path, .dark span[data-icon="return-light"] path {
-    fill: var(--Maastricht-Blue) !important;
+    fill: var(--White) !important;
     fill-opacity: 100% !important;
 }
 
@@ -530,7 +600,7 @@ html[dir] .dark .qfKkX>span[data-icon="x-light"] path, .dark .qfKkX>span[data-ic
     fill-opacity: 1;
 }
 
-.dark .darwin .-XQxp._1oNFt path, .dark .-XQxp._1oNFt path, .dark .win32 .-XQxp._1oNFt path, .dark span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"], .dark ._1DnDx>span[data-icon="checkbox-round-checked"] path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"], .dark span[data-icon="audio-cancel-noborder"] path {
+.dark .darwin .-XQxp._1oNFt path, .dark .-XQxp._1oNFt path, .dark .win32 .-XQxp._1oNFt path, .dark span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"], .dark span[data-icon="checkbox-round-checked"] path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"], .dark span[data-icon="audio-cancel-noborder"] path {
     fill: var(--Goldenrod) !important;
 }
 

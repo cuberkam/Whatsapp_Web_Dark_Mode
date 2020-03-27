@@ -26,7 +26,7 @@ const setStyle = (intro, msgout, msgin, chat, doodle) => `
     [data-asset-chat-background] {
         background-image: url("${chat}") !important;
     }
-    ._3XqhJ {
+    ._3XqhJ, ._1gzBr {
         background-image: url("${doodle}") !important;
     }
     `
