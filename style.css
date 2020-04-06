@@ -29,10 +29,47 @@ html[dir] .dark ::-webkit-scrollbar-thumb {
     background-color: var(--Dark-Goldenrod) !important
 }
 html[dir] .dark ::-webkit-scrollbar-track {
-    background-color: transparent
+    background-color: transparent !important;
+}
+
+.dark ._14MyY{
+    color: var(--secondary-lighter) !important;
+}
+
+html[dir=ltr] .dark ._2EXPL._2rVcC ._1AwDx, html[dir=ltr] .dark ._2EXPL._2rVcC ._25Ooe{
+    color: var(--secondary) !important;
+}
+
+html[dir=ltr] .dark ._3Ye_R{
+    color: unset !important;
+}
+
+html[dir] .dark ._3j7s9, html[dir] .dark ._3YwRO, html[dir] .dark ._2EXPL:hover:after, html[dir] .dark ._1CkkN+._1CkkN ._10xEB {
+    border-top: unset !important;
+}
+
+html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
+    background-color: unset !important;
 }
 
 .dark {
+    --chat-marker: var(--White) !important;
+    --chat-marker-rgb: var(--White-Rgb) !important;
+    --chat-marker-border: var(--White) !important;
+    --chat-marker-border-rgb: var(--White-Rgb) !important;
+    --chat-marker-admin: var(--Goldenrod) !important;
+    --chat-marker-admin-rgb: var(--Goldenrod-Rgb) !important;
+    --chat-marker-admin-border: var(--Goldenrod) !important;
+    --chat-marker-admin-border-rgb: var(--Goldenrod-Rgb) !important;
+    --icon-search-back: var(--White) !important;
+    --icon-search-back-rgb: var(--White-Rgb) !important;
+    --gray-30: var(--Police-Blue) !important;
+    --gray-30-rgb: var(--Police-Blue-Rgb) !important;
+    --status-background: var(--Maastricht-Blue) !important;
+    --status-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+    --status-background-hover: var(--Yankees-Blue) !important;
+    --status-background-hover-rgb: var(--Yankees-Blue-Rgb) !important;
+    --link: var(--Goldenrod) !important;
     --panel-background-active: var(--Police-Blue) !important;
     --gray-200: var(--Goldenrod) !important;
     --butterbar-background-connection: var(--Goldenrod) !important;
@@ -77,8 +114,11 @@ html[dir] .dark ::-webkit-scrollbar-track {
     --notification-e2e-background: var(--Police-Blue) !important;
     --conversation-panel-background: var(--Maastricht-Blue) !important;
     --panel-background-colored: var(--Goldenrod) !important;
-    --border-stronger: transparent important;
+    --border-stronger: transparent !important;
+    --modal-backdrop: rgba(var(--Maastricht-Blue-Rgb), .85) !important;
+    --modal-backdrop-rgb: var(--Maastricht-Blue-Rgb) !important;
     --modal-backdrop-solid: var(--Maastricht-Blue) !important;
+    --modal-backdrop-solid-rgb: var(--Maastricht-Blue-Rgb) !important;
     --modal-background: var(--Police-Blue) !important;
     --butterbar-background-update: var(--Goldenrod) !important;
     --active-tab-marker: var(--Dark-Goldenrod) !important;

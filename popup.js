@@ -82,4 +82,3 @@ chrome.storage.sync.get(['checked'], function (data) {
   }
 });
 //#endregion Site terk edildikten sonra hafızadaki değerin uygulanması
-
