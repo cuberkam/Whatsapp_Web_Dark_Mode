@@ -17,7 +17,7 @@
 
 [<img src="https://dev.opera.com/extensions/branding-guidelines/addons_206x58_en@2x.png" height="60"/>](https://addons.opera.com/tr/extensions/details/whatsapp-web-dark-mode/)
 </br>
-![Opera Addons](https://img.shields.io/badge/downloads-2k%2B-red)
+![Opera Addons](https://img.shields.io/badge/downloads-3k%2B-red)
 
 ---
 
