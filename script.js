@@ -17,7 +17,7 @@ const setStyle = (intro, msgout, msgin, chat, doodle) => `
     [data-asset-intro-image] {
         background-image: url("${intro}") !important
     }
-    html[dir=ltr] .dark .message-out .tail-container {
+    html[dir=ltr] .dark .message-out .tail-container .tail-out {
         background-image: url("${msgout}") !important
     }
     html[dir=ltr] .dark .message-in .tail-container, html[dir=ltr] .dark .message-out .tail-override-left .tail-container {

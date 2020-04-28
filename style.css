@@ -200,6 +200,26 @@ html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
     --panel-background-colored-deeper: var(--Dark-Goldenrod) !important;
     --panel-background-colored-deeper-rgb: var(--Dark-Goldenrod-Rgb) !important;
     --highlight:var(--Goldenrod) !important;
+    --dropdown-background-hover:var(--Police-Blue) !important;
+    --notification-e2e-text:var(--White) !important;
+    --notification-e2e-icon:var(--White) !important;
+    --quick-action-button:var(--White) !important;
+    --primary-stronger:var(--White) !important;
+    --button-alternative-background:var(--Yankees-Blue) !important;
+    --button-alternative:var(--White) !important;
+    --input-border-active: var(--Goldenrod-Rgb) !important;
+    --drawer-header-title:var(--White) !important;
+    --drawer-section-background: var(--Yankees-Blue) !important;
+    --drawer-gallery-background: var(--Yankees-Blue) !important;
+    --drawer-background: var(--Yankees-Blue) !important;
+    --empty-state-icon:var(--White) !important;
+    --empty-state-background: var(--Yankees-Blue) !important;
+    --quick-action-button-background: var(--Police-Blue) !important;
+    --icon-disabled: var(--icon-strong) !important;
+    --spinner-default: var(--Goldenrod) !important;
+    --drawer-header-title:var(--White) !important;
+    --conversation-panel-border: var(--Maastricht-Blue) !important;
+    --toast-background: rgba(var(--Police-Blue-Rgb), 0.96) !important;
 }
 .dark ._1x_c3.bRYFY span[data-icon="smiley"] path,.dark ._1x_c3.bRYFY span[data-icon="gif"] path, .dark ._1x_c3.bRYFY span[data-icon="sticker"] path {
     fill: var(--Goldenrod) !important;
@@ -212,7 +232,7 @@ html[dir] .dark .MVjBr._3e2jK[style] {
     background-color: var(--Police-Blue) !important;
 }
 
-html[dir] .dark .eiCXe{
+html[dir] .dark .eiCXe,html[dir] .dark ._35DHA{
     background-color: var(--Police-Blue) !important;
 }
 html[dir] .dark ._2UaNq {
@@ -264,7 +284,7 @@ html[dir=ltr] .dark ._1WMT2:before {
     z-index: 0 !important;
 }
 
-html[dir] .dark ._1WMT2._2V_Wj, html[dir] .dark ._3yth3, html[dir] .dark ._26pkE,html[dir] .dark ._2MSJr {
+html[dir] .dark ._1WMT2._2V_Wj, html[dir] .dark ._3yth3, html[dir] .dark ._26pkE,html[dir] .dark ._2MSJr, html[dir] .dark ._3nuGo {
     background-color: var(--Police-Blue) !important;
 }
 
@@ -331,7 +351,7 @@ html[dir] .dark .jZhyM {
     color: var(--Dark-Goldenrod) !important;
 }
 
-.dark a, html[dir] .dark .color-1, .dark .r7sRK, /*.dark .matched-text,*/ .dark ._3he1q, .dark ._1T8rb, .dark ._2wn58, .dark .Ir_Ne, .dark ._1Jc9f, .dark .FPZFa, .dark ._2ZAIy {
+.dark a, html[dir] .dark .color-1, html[dir=ltr] .dark .color-1, .dark .r7sRK, .dark ._3he1q, .dark ._1T8rb, .dark ._2wn58, .dark .Ir_Ne, .dark ._1Jc9f, .dark .FPZFa, .dark ._2ZAIy {
     color: var(--Goldenrod) !important;
 }
 
@@ -530,7 +550,7 @@ html[dir] .dark ._3Xx0y {
     border-top: 1px solid rgba(var(--Dark-Goldenrod-Rgb), .15) !important;
 }
 
-.dark ._3Xx0y, .dark ._2lKjK, .dark .BJa6O, .dark ._3FeAD .wjdTm, .dark ._2xHOS, .dark ._3Yulp, .dark ._26pkE {
+.dark ._3Xx0y, .dark ._2lKjK, .dark .BJa6O, .dark ._3FeAD .wjdTm, .dark ._2xHOS, .dark ._3Yulp, .dark ._26pkE, .dark ._21zbN {
     color: white !important;
 }
 
