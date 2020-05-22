@@ -220,6 +220,9 @@ html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
     --drawer-header-title:var(--White) !important;
     --conversation-panel-border: var(--Maastricht-Blue) !important;
     --toast-background: rgba(var(--Police-Blue-Rgb), 0.96) !important;
+    --typing: var(--Goldenrod) !important;
+    --butterbar-connection-primary: var(--White) !important;
+    --inverse-rgb: var(--White-Rgb) !important;
 }
 .dark ._1x_c3.bRYFY span[data-icon="smiley"] path,.dark ._1x_c3.bRYFY span[data-icon="gif"] path, .dark ._1x_c3.bRYFY span[data-icon="sticker"] path {
     fill: var(--Goldenrod) !important;
