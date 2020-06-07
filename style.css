@@ -52,6 +52,10 @@ html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
     background-color: unset !important;
 }
 
+html[dir] .dark ._2_F5S{
+    background-color: var(--Police-Blue) !important;
+}
+
 .dark {
     --chat-marker: var(--White) !important;
     --chat-marker-rgb: var(--White-Rgb) !important;
@@ -88,7 +92,7 @@ html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
     --outgoing-background-rgb: var(--Police-Blue-Rgb) !important;
     --incoming-background-rgb: var(--Police-Blue-Rgb) !important;
     --green-deep-rgb: var(--Goldenrod-Rgb) !important;
-    --teal: var(--Goldenrod) !important;
+    --teal: #DAA520 !important;
     --teal-rgb: var(--Goldenrod-Rgb) !important;
     --teal-pale: var(--Goldenrod) !important;
     --teal-lighter: var(--Goldenrod) !important;
@@ -212,6 +216,7 @@ html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
     --drawer-section-background: var(--Yankees-Blue) !important;
     --drawer-gallery-background: var(--Yankees-Blue) !important;
     --drawer-background: var(--Yankees-Blue) !important;
+    --drawer-background-deep: var(--Yankees-Blue) !important;
     --empty-state-icon:var(--White) !important;
     --empty-state-background: var(--Yankees-Blue) !important;
     --quick-action-button-background: var(--Police-Blue) !important;
@@ -222,7 +227,19 @@ html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
     --toast-background: rgba(var(--Police-Blue-Rgb), 0.96) !important;
     --typing: var(--Goldenrod) !important;
     --butterbar-connection-primary: var(--White) !important;
+    --butterbar-default-background: var(--Police-Blue) !important;
     --inverse-rgb: var(--White-Rgb) !important;
+    --panel-header-background:var(--Maastricht-Blue) !important;
+    --checkbox-background: var(--Goldenrod) !important;
+    --checkbox-mark: var(--White) !important;
+    --intro-border: var(--Dark-Goldenrod) !important;
+}
+.dark .FIHAk._3QjfB, .dark ._3eFiH{
+    color: var(--Goldenrod) !important;
+}
+
+.dark .wYdnw.zflNe span[data-icon="delete"] path{
+    fill:var(--danger) !important;
 }
 .dark ._1x_c3.bRYFY span[data-icon="smiley"] path,.dark ._1x_c3.bRYFY span[data-icon="gif"] path, .dark ._1x_c3.bRYFY span[data-icon="sticker"] path {
     fill: var(--Goldenrod) !important;
@@ -323,7 +340,7 @@ html[dir] .dark ._1WMT2:before, html[dir] .dark ._3RWII, html[dir] .dark ._70TS5
     border-color: var(--Dark-Goldenrod) !important;
 }
 
-html[dir] .dark ._1qNwV, html[dir] .dark ._3RiLE, #initial_startup, #startup, html[dir] .dark ._3Fq9Y.iEUx2, html[dir] .dark ._1T8rb, html[dir] .dark .NuujD, html[dir] .dark .NeQRT, .dark ._2l-YP:first-child, .dark .CDuBw:nth-child(1) {
+html[dir] .dark ._1qNwV, html[dir] .dark ._3RiLE, #initial_startup, #startup, html[dir] .dark ._3Fq9Y.iEUx2, html[dir] .dark ._1T8rb, html[dir] .dark .NuujD, html[dir] .dark .NeQRT, .dark ._2l-YP:first-child, .dark .CDuBw:nth-child(1), .dark ._1m6L6._1rIeG:first-child {
     background-color: var(--Maastricht-Blue) !important;
 }
 

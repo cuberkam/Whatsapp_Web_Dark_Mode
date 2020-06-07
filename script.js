@@ -23,10 +23,10 @@ const setStyle = (intro, msgout, msgin, chat, doodle) => `
     html[dir=ltr] .dark .message-in .tail-container, html[dir=ltr] .dark .message-out .tail-override-left .tail-container {
         background-image: url("${msgin}") !important
     }
-    [data-asset-chat-background] {
+    [data-asset-chat-background], [data-asset-chat-background-light] {
         background-image: url("${chat}") !important;
     }
-    ._3XqhJ, ._1gzBr {
+    ._3XqhJ, ._1gzBr, ._2mKzQ {
         background-image: url("${doodle}") !important;
     }
     `
