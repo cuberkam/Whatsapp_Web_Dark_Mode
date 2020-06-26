@@ -1,704 +1,520 @@
-:root{
-    --Maastricht-Blue:#081B33;
-    --Maastricht-Blue-Rgb:8, 27, 51;
-    --Yankees-Blue:#152642;
-    --Yankees-Blue-Rgb:21, 38, 66;
-    --Police-Blue:#2F4562;
-    --Police-Blue-Rgb:47, 69, 98;
-    --Dark-Electric-Blue:#506680;
-    --Dark-Electric-Blue-Rgb:80, 102, 128;
-    --Slate-Gray:#767D92;
+:root {
+  --Maastricht-Blue: #081b33;
+  --Maastricht-Blue-Rgb: 8, 27, 51;
+  --Yankees-Blue: #152642;
+  --Yankees-Blue-Rgb: 21, 38, 66;
+  --Police-Blue: #2f4562;
+  --Police-Blue-Rgb: 47, 69, 98;
+  --Dark-Electric-Blue: #506680;
+  --Dark-Electric-Blue-Rgb: 80, 102, 128;
+  --Slate-Gray: #767d92;
 
-    --Dark-Goldenrod:#B8860B;
-    --Dark-Goldenrod-Rgb:184, 134, 11;
-    --Goldenrod:#DAA520;
-    --Goldenrod-Rgb:218, 165, 32;
-    --Maize:#F1C84C;
-    --Maize-Rgb:241, 200, 76;
+  --Dark-Goldenrod: #b8860b;
+  --Dark-Goldenrod-Rgb: 184, 134, 11;
+  --Goldenrod: #daa520;
+  --Goldenrod-Rgb: 218, 165, 32;
+  --Maize: #f1c84c;
+  --Maize-Rgb: 241, 200, 76;
 
-    --White: #FFFFFF;
-    --White-Rgb: 255, 255, 255;
+  --White: #ffffff;
+  --White-Rgb: 255, 255, 255;
 }
-body.dark {
-    color: white !important
-}
+
 html[dir] body.dark {
-    background-image: linear-gradient(180deg, var(--Yankees-Blue), var(--Maastricht-Blue)) !important
+  background-image: linear-gradient(180deg, var(--Yankees-Blue), var(--Maastricht-Blue)) !important
 }
+
+#initial_startup, #startup {
+  background-color: var(--Maastricht-Blue) !important;
+}
+
+.dark ._1m6L6:first-child {
+  background-image: linear-gradient(180deg, var(--Yankees-Blue), var(--Maastricht-Blue)) !important;
+  background-color: var(--Maastricht-Blue) !important;
+}
+
 html[dir] .dark ::-webkit-scrollbar-thumb {
-    background-color: var(--Dark-Goldenrod) !important
-}
-html[dir] .dark ::-webkit-scrollbar-track {
-    background-color: transparent !important;
+  background-color: var(--Goldenrod) !important;
 }
 
-.dark ._14MyY{
-    color: var(--secondary-lighter) !important;
+html[dir] .dark ._3qx7_ {
+  background-color: var(--Maastricht-Blue) !important;
 }
 
-html[dir=ltr] .dark ._2EXPL._2rVcC ._1AwDx, html[dir=ltr] .dark ._2EXPL._2rVcC ._25Ooe{
-    color: var(--secondary) !important;
+html[dir] .dark ._2T-91 {
+  background-color: var(--Yankees-Blue) !important;
 }
 
-html[dir=ltr] .dark ._3Ye_R{
-    color: unset !important;
+.dark ._3JuBL ._3SrqU {
+  opacity: 1 !important;
 }
 
-html[dir] .dark ._3j7s9, html[dir] .dark ._3YwRO, html[dir] .dark ._2EXPL:hover:after, html[dir] .dark ._1CkkN+._1CkkN ._10xEB {
-    border-top: unset !important;
+.dark ._5MCSh::first-line {
+  background-color: var(--Maastricht-Blue) !important;
+}
+html[dir="ltr"] .dark .aGjYp._1oeQS:after {
+  left: 0 !important;
 }
 
-html[dir] .dark .MS-DH:before, html[dir] .dark ._1BLxK {
-    background-color: unset !important;
-}
-
-html[dir] .dark ._2_F5S{
-    background-color: var(--Police-Blue) !important;
-}
-
-.dark {
-    --chat-marker: var(--White) !important;
-    --chat-marker-rgb: var(--White-Rgb) !important;
-    --chat-marker-border: var(--White) !important;
-    --chat-marker-border-rgb: var(--White-Rgb) !important;
-    --chat-marker-admin: var(--Goldenrod) !important;
-    --chat-marker-admin-rgb: var(--Goldenrod-Rgb) !important;
-    --chat-marker-admin-border: var(--Goldenrod) !important;
-    --chat-marker-admin-border-rgb: var(--Goldenrod-Rgb) !important;
-    --icon-search-back: var(--White) !important;
-    --icon-search-back-rgb: var(--White-Rgb) !important;
-    --gray-30: var(--Police-Blue) !important;
-    --gray-30-rgb: var(--Police-Blue-Rgb) !important;
-    --status-background: var(--Maastricht-Blue) !important;
-    --status-background-rgb: var(--Maastricht-Blue-Rgb) !important;
-    --status-background-hover: var(--Yankees-Blue) !important;
-    --status-background-hover-rgb: var(--Yankees-Blue-Rgb) !important;
-    --link: var(--Goldenrod) !important;
-    --panel-background-active: var(--Police-Blue) !important;
-    --gray-200: var(--Goldenrod) !important;
-    --butterbar-background-connection: var(--Goldenrod) !important;
-    --media-viewer-button-background: var(--Police-Blue) !important;
-    --media-viewer-background-rgb: var(--Yankees-Blue-Rgb) !important;
-    --media-viewer-background: var(--Yankees-Blue) !important;
-    --chat-marker-admin: var(--Goldenrod) !important;
-    --chat-marker-admin-border: var(--Goldenrod) !important;
-    --white: var(--Police-Blue) !important;
-    --unread-background: var(--Goldenrod) !important;
-    --unread-background-rgb: var(--Goldenrod-Rgb) !important;
-    --unread-bar-background: rgba(var(--Goldenrod-Rgb), .25) !important;
-    --unread-bar-background-rgb: var(--Goldenrod-Rgb) !important;
-    --primary-strong: var(--White) !important;
-    --menu-tabs-list-active: var(--Dark-Goldenrod) !important;
-    --outgoing-background-rgb: var(--Police-Blue-Rgb) !important;
-    --incoming-background-rgb: var(--Police-Blue-Rgb) !important;
-    --green-deep-rgb: var(--Goldenrod-Rgb) !important;
-    --teal: #DAA520 !important;
-    --teal-rgb: var(--Goldenrod-Rgb) !important;
-    --teal-pale: var(--Goldenrod) !important;
-    --teal-lighter: var(--Goldenrod) !important;
-    --green: var(--Goldenrod) !important;
-    --compose-background: var(--Yankees-Blue) !important;
-    --compose-background-rgb: var(--Yankees-Blue-Rgb) !important;
-    --inverse: var(--White) !important;
-    --gray-600: var(--White) !important;
-    --button-round-background: var(--Goldenrod) !important;
-    --panel-background-deep: var(--Yankees-Blue) !important;
-    --panel-background-hover: var(--Yankees-Blue) !important;
-    --rich-text-panel-background: var(--Maastricht-Blue) !important;
-    --icon-fixed: var(--White) !important;
-    --border-input-active: var(--Goldenrod) !important;
-    --primary: var(--White) !important;
-    --dropdown-background: var(--Yankees-Blue) !important;
-    --overlay-rgb: var(--Police-Blue-Rgb) !important;
-    --outgoing-background: var(--Police-Blue) !important;
-    --incoming-background: var(--Police-Blue) !important;
-    --notification-text: var(--White) !important;
-    --system-message-text: var(--White) !important;
-    --system-message-background: var(--Police-Blue) !important;
-    --notification-e2e-background: var(--Police-Blue) !important;
-    --conversation-panel-background: var(--Maastricht-Blue) !important;
-    --panel-background-colored: var(--Goldenrod) !important;
-    --border-stronger: transparent !important;
-    --modal-backdrop: rgba(var(--Maastricht-Blue-Rgb), .85) !important;
-    --modal-backdrop-rgb: var(--Maastricht-Blue-Rgb) !important;
-    --modal-backdrop-solid: var(--Maastricht-Blue) !important;
-    --modal-backdrop-solid-rgb: var(--Maastricht-Blue-Rgb) !important;
-    --modal-background: var(--Police-Blue) !important;
-    --butterbar-background-update: var(--Goldenrod) !important;
-    --active-tab-marker: var(--Dark-Goldenrod) !important;
-    --active-tab-marker-rgb: var(--Dark-Goldenrod-Rgb) !important;
-    --app-background-stripe: var(--Dark-Goldenrod) !important;
-    --app-background-stripe-rgb: var(--Dark-Goldenrod-Rgb) !important;
-    --audio-progress-incoming: var(--Goldenrod) !important;
-    --audio-progress-incoming-rgb: var(--Goldenrod-Rgb) !important;
-    --audio-progress-played-incoming: var(--Goldenrod) !important;
-    --audio-progress-played-incoming-rgb: var(--Goldenrod-Rgb) !important;
-    --audio-progress-played-outgoing: var(--Goldenrod) !important;
-    --audio-progress-played-outgoing-rgb: var(--Goldenrod-Rgb) !important;
-    --audio-track-incoming: var(--Dark-Electric-Blue) !important;
-    --audio-track-incoming-rgb: var(--Dark-Electric-Blue-Rgb) !important;
-    --audio-track-outgoing: var(--Dark-Electric-Blue) !important;
-    --audio-track-outgoing-rgb: var(--Dark-Electric-Blue-Rgb) !important;
-    --avatar-placeholder-background: var(--Dark-Electric-Blue) !important;
-    --avatar-placeholder-background-rgb: var(--Dark-Electric-Blue-Rgb) !important;
-    --avatar-placeholder-primary: white !important;
-    --avatar-placeholder-primary-rgb: var(--White-Rgb) !important;
-    --background-default: var(--Yankees-Blue) !important;
-    --background-default-rgb: var(--Yankees-Blue-Rgb) !important;
-    --background-default-active: var(--Police-Blue) !important;
-    --background-default-active-rgb: var(--Police-Blue-Rgb) !important;
-    --background-default-hover: var(--Police-Blue) !important;
-    --background-default-hover-rgb: var(--Police-Blue-Rgb) !important;
-    --border-chatlist: var(--Police-Blue) !important;
-    --border-chatlist-rgb: var(--Police-Blue-Rgb) !important;
-    --border-default: var(--Police-Blue) !important;
-    --border-default-rgb: var(--Police-Blue-Rgb) !important;
-    --butterbar-background-default: var(--Police-Blue) !important;
-    --butterbar-background-default-rgb: var(--Police-Blue-Rgb) !important;
-    --butterbar-primary: var(--White) !important;
-    --butterbar-primary-rgb: var(--White-Rgb) !important;
-    --butterbar-secondary: hsla(220, 4%, 84%, .97) !important;
-    --butterbar-secondary-rgb: 213, 214, 216 !important;
-    --button-primary-background: var(--Dark-Goldenrod) !important;
-    --button-primary-background-rgb: var(--Dark-Goldenrod-Rgb) !important;
-    --button-primary-background-hover: var(--Goldenrod) !important;
-    --button-primary-background-hover-rgb: var(--Goldenrod-Rgb) !important;
-    --button-secondary: var(--Goldenrod) !important;
-    --button-secondary-rgb: var(--Goldenrod-Rgb) !important;
-    --button-secondary-hover: var(--Goldenrod) !important;
-    --icon: #d5d6d8f7 !important;
-    --icon-rgb: 213, 214, 216 !important;
-    --icon-lighter: hsla(220, 4%, 84%, .97) !important;
-    --icon-lighter-rgb: 255, 255, 255 !important;
-    --input-placeholder: #d5d6d8f7 !important;
-    --input-placeholder-rgb: 213, 214, 216 !important;
-    --intro-background: var(--Maastricht-Blue) !important;
-    --intro-background-rgb: var(--Maastricht-Blue-Rgb) !important;
-    --panel-background: var(--Yankees-Blue) !important;
-    --panel-background-rgb: var(--Yankees-Blue-Rgb) !important;
-    --panel-background-deeper: var(--Yankees-Blue) !important;
-    --panel-background-deeper-rgb: var(--Yankees-Blue-Rgb) !important;
-    --panel-background-lighter: var(--Yankees-Blue) !important;
-    --panel-background-lighter-rgb: var(--Yankees-Blue-Rgb) !important;
-    --secondary: hsla(220, 4%, 84%, 0.969) !important;
-    --secondary-rgb: 213, 214, 216 !important;
-    --secondary-light: hsla(220, 4%, 84%, 0.969) !important;
-    --secondary-light-rgb: 213, 214, 216 !important;
-    --secondary-lighter: hsla(220, 4%, 84%, 0.97) !important;
-    --secondary-lighter-rgb: 213, 214, 216 !important;
-    --secondary-stronger: hsla(220, 4%, 84%, 0.969) !important;
-    --secondary-stronger-rgb: 213, 214, 216 !important;
-    --unread-marker-background: var(--Goldenrod) !important;
-    --unread-marker-background-rgb: var(--Goldenrod-Rgb) !important;
-    --gray-900-rgb: 8, 27, 51 !important;
-    --photopicker-overlay-background: hsla(43, 89%, 38%, .8);
-    --photopicker-overlay-background-rgb: 183, 134, 11;
-    --incoming-background-deeper: var(--Dark-Electric-Blue) !important;
-    --incoming-background-deeper-rgb: var(--Dark-Electric-Blue-Rgb) !important;
-    --outgoing-background-deeper: var(--Dark-Electric-Blue) !important;
-    --outgoing-background-deeper-rgb: var(--Dark-Electric-Blue-Rgb) !important;
-    --tooltip-background: rgba(184, 134, 11, .85) !important;
-    --tooltip-background-rgb: 184.25, 134.25, 11.25 !important;
-    --icon-ack: var(--Goldenrod) !important;
-    --icon-ack-rgb: var(--Goldenrod-Rgb) !important;
-    --panel-background-colored-deeper: var(--Dark-Goldenrod) !important;
-    --panel-background-colored-deeper-rgb: var(--Dark-Goldenrod-Rgb) !important;
-    --highlight:var(--Goldenrod) !important;
-    --dropdown-background-hover:var(--Police-Blue) !important;
-    --notification-e2e-text:var(--White) !important;
-    --notification-e2e-icon:var(--White) !important;
-    --quick-action-button:var(--White) !important;
-    --primary-stronger:var(--White) !important;
-    --button-alternative-background:var(--Yankees-Blue) !important;
-    --button-alternative:var(--White) !important;
-    --input-border-active: var(--Goldenrod-Rgb) !important;
-    --drawer-header-title:var(--White) !important;
-    --drawer-section-background: var(--Yankees-Blue) !important;
-    --drawer-gallery-background: var(--Yankees-Blue) !important;
-    --drawer-background: var(--Yankees-Blue) !important;
-    --drawer-background-deep: var(--Yankees-Blue) !important;
-    --empty-state-icon:var(--White) !important;
-    --empty-state-background: var(--Yankees-Blue) !important;
-    --quick-action-button-background: var(--Police-Blue) !important;
-    --icon-disabled: var(--icon-strong) !important;
-    --spinner-default: var(--Goldenrod) !important;
-    --drawer-header-title:var(--White) !important;
-    --conversation-panel-border: var(--Maastricht-Blue) !important;
-    --toast-background: rgba(var(--Police-Blue-Rgb), 0.96) !important;
-    --typing: var(--Goldenrod) !important;
-    --butterbar-connection-primary: var(--White) !important;
-    --butterbar-default-background: var(--Police-Blue) !important;
-    --inverse-rgb: var(--White-Rgb) !important;
-    --panel-header-background:var(--Maastricht-Blue) !important;
-    --checkbox-background: var(--Goldenrod) !important;
-    --checkbox-mark: var(--White) !important;
-    --intro-border: var(--Dark-Goldenrod) !important;
-}
-.dark .FIHAk._3QjfB, .dark ._3eFiH{
-    color: var(--Goldenrod) !important;
-}
-
-.dark .wYdnw.zflNe span[data-icon="delete"] path{
-    fill:var(--danger) !important;
-}
-.dark ._1x_c3.bRYFY span[data-icon="smiley"] path,.dark ._1x_c3.bRYFY span[data-icon="gif"] path, .dark ._1x_c3.bRYFY span[data-icon="sticker"] path {
-    fill: var(--Goldenrod) !important;
-}
-html[dir] .dark ._1qNwV:after, html[dir] .dark ._2zynu:after {
-    border-top: 6px solid var(--Dark-Goldenrod) !important;
-}
-
-html[dir] .dark .MVjBr._3e2jK[style] {
-    background-color: var(--Police-Blue) !important;
-}
-
-html[dir] .dark .eiCXe,html[dir] .dark ._35DHA{
-    background-color: var(--Police-Blue) !important;
-}
-html[dir] .dark ._2UaNq {
-    border-top: 1px solid var(--Police-Blue) !important;
-    border-bottom: 1px solid var(--Police-Blue) !important;
-}
-html[dir] .dark ._2WP9Q, html[dir] .dark ._2n0jo {
-    border-top: none !important;
-}
-.dark ._3DxjC {
-    color: rgba(var(--icon-lighter-rgb),1) !important;
-}
-html[dir] .dark .ZP8RM, html[dir] .dark ._3B9bf{
-    background-color: var(--Yankees-Blue) !important;
-}
-html[dir] .dark .gQzdc{
-    background-color: var(--Yankees-Blue) !important;
+html[dir] .dark ._1ByLM {
+  border-top: none !important;
 }
 
 /* #region Progress */
 
-progress {
-    background: var(--Dark-Electric-Blue) !important;
+.dark progress {
+  background: var(--Dark-Electric-Blue) !important;
 }
 
-progress::-webkit-progress-value {
-    background: var(--Goldenrod) !important;
+.dark progress::-webkit-progress-value {
+  background: var(--Goldenrod) !important;
 }
 
-progress::-moz-progress-bar {
-    background: var(--Goldenrod) !important;
+.dark progress::-moz-progress-bar {
+  background: var(--Goldenrod) !important;
 }
 
-progress::-webkit-progress-value {
-    background: var(--Goldenrod) !important;
+.dark progress::-webkit-progress-value {
+  background: var(--Goldenrod) !important;
 }
 
-progress::-webkit-progress-bar {
-    background: var(--Dark-Electric-Blue) !important;
+.dark progress::-webkit-progress-bar {
+  background: var(--Dark-Electric-Blue) !important;
 }
 
 /* #endregion Progress*/
 
-html[dir=ltr] .dark ._1WMT2:before {
-    left: 0 !important;
+.dark {
+  --active-tab-marker: var(--Goldenrod) !important;
+  --active-tab-marker-rgb: var(--Goldenrod-Rgb) !important;
+  --app-background: var(--Maastricht-Blue) !important;
+  --app-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --app-background-deeper: var(--Maastricht-Blue) !important;
+  --app-background-deeper-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --app-background-stripe: transparent;
+  --app-background-stripe-rgb: 0, 0, 0;
+  --audio-progress-incoming: #3cb362;
+  --audio-progress-incoming-rgb: 60, 179, 98;
+  --audio-progress-outgoing: #5f8884;
+  --audio-progress-outgoing-rgb: 95, 136, 132;
+  --audio-progress-played-incoming: #5ca0c2;
+  --audio-progress-played-incoming-rgb: 92, 160, 194;
+  --audio-progress-played-outgoing: #55a5c5;
+  --audio-progress-played-outgoing-rgb: 85, 165, 197;
+  --audio-track-incoming: #3b4044;
+  --audio-track-incoming-rgb: 59, 64, 68;
+  --audio-track-outgoing: #1d5852;
+  --audio-track-outgoing-rgb: 29, 88, 82;
+  --avatar-background: #131c21;
+  --avatar-background-rgb: 18.6, 28.22, 33.4;
+  --avatar-border: #a5aaad;
+  --avatar-border-rgb: 165, 170, 173;
+  --avatar-placeholder-background: var(--Police-Blue) !important;
+  --avatar-placeholder-background-rgb: var(--Police-Blue-Rgb) !important;
+  --avatar-placeholder-primary: #d6d7d9;
+  --avatar-placeholder-primary-rgb: 214, 215, 217;
+  --background-default: var(--Maastricht-Blue) !important;
+  --background-default-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --background-default-active: var(--Maastricht-Blue) !important;
+  --background-default-active-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --background-default-hover: var(--Police-Blue) !important;
+  --background-default-hover-rgb: var(--Police-Blue-Rgb) !important;
+  --beige-rgb: var(--Police-Blue-Rgb) !important;
+  --border-bubble: rgba(241, 241, 242, 0.12);
+  --border-bubble-rgb: 241, 241, 242;
+  --border-default: var(--Yankees-Blue) !important;
+  --border-default-rgb: var(--Yankees-Blue-Rgb) !important;
+  --border-list: transparent !important;
+  --border-list-rgb: 41, 49, 54;
+  --border-panel: transparent !important;
+  --border-panel-rgb: 48, 55, 59;
+  --border-strong: var(--Police-Blue) !important;
+  --border-strong-rgb: var(--Police-Blue-Rgb) !important;
+  --border-stronger: rgba(241, 241, 242, 0.11);
+  --border-stronger-rgb: 241, 241, 242;
+  --bubble-meta: rgba(241, 241, 242, 0.63);
+  --bubble-meta-rgb: 241, 241, 242;
+  --bubble-meta-icon: rgba(241, 241, 242, 0.63);
+  --bubble-meta-icon-rgb: 241, 241, 242;
+  --butterbar-battery-background: #e05b52;
+  --butterbar-battery-background-rgb: 224, 91, 82;
+  --butterbar-battery-primary: rgba(241, 241, 242, 0.96);
+  --butterbar-battery-primary-rgb: 241, 241, 242;
+  --butterbar-battery-secondary: rgba(241, 241, 242, 0.8);
+  --butterbar-battery-secondary-rgb: 241, 241, 242;
+  --butterbar-connection-background: var(--Dark-Goldenrod) !important;
+  --butterbar-connection-background-rgb: var(--Dark-Goldenrod-Rgb) !important;
+  --butterbar-connection-primary: white !important;
+  --butterbar-connection-primary-rgb: var(--White-Rgb) !important;
+  --butterbar-connection-secondary: white !important;
+  --butterbar-connection-secondary-rgb: var(--White-Rgb) !important;
+  --butterbar-default-background: var(--Police-Blue) !important;
+  --butterbar-default-background-rgb: var(--Police-Blue-Rgb) !important;
+  --butterbar-icon: rgba(241, 241, 242, 0.8);
+  --butterbar-icon-rgb: 241, 241, 242;
+  --butterbar-primary: rgba(241, 241, 242, 0.96);
+  --butterbar-primary-rgb: 241, 241, 242;
+  --butterbar-secondary: rgba(241, 241, 242, 0.85);
+  --butterbar-secondary-rgb: 241, 241, 242;
+  --butterbar-update-background: #00af9c;
+  --butterbar-update-background-rgb: 0, 175, 156;
+  --button-alternative: #68bbe4;
+  --button-alternative-rgb: 104, 187, 228;
+  --button-alternative-background: var(--Maastricht-Blue) !important;
+  --button-alternative-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --button-background-disabled: #2a2f32;
+  --button-background-disabled-rgb: 41.6, 47.46667, 50.4;
+  --button-bubble: rgba(0, 175, 156, 0.7);
+  --button-bubble-rgb: 0, 175, 156;
+  --button-primary: #131c21;
+  --button-primary-rgb: 18.6, 28.22, 33.4;
+  --button-primary-background: var(--Dark-Goldenrod) !important;
+  --button-primary-background-rgb: var(--Dark-Goldenrod-Rgb) !important;
+  --button-primary-background-hover: var(--Goldenrod) !important;
+  --button-primary-background-hover-rgb: var(--Goldenrod-Rgb) !important;
+  --button-round-background: var(--Goldenrod) !important;
+  --button-round-background-rgb: var(--Goldenrod-Rgb) !important;
+  --button-secondary: var(--Goldenrod) !important;
+  --button-secondary-rgb: var(--Goldenrod-Rgb) !important;
+  --button-secondary-background: transparent;
+  --button-secondary-background-rgb: 0, 0, 0;
+  --button-secondary-background-hover: rgba(241, 241, 242, 0.05);
+  --button-secondary-background-hover-rgb: 241, 241, 242;
+  --button-secondary-hover: var(--Dark-Goldenrod) !important;
+  --button-secondary-hover-rgb: var(--Dark-Goldenrod-Rgb) !important;
+  --chat-marker: #999;
+  --chat-marker-rgb: 153, 153, 153;
+  --chat-marker-admin: var(--Goldenrod) !important;
+  --chat-marker-admin-rgb: var(--Goldenrod-Rgb) !important;
+  --chat-marker-admin-border: var(--Goldenrod) !important;
+  --chat-marker-admin-border-rgb: var(--Goldenrod-Rgb) !important;
+  --chat-marker-border: hsla(0, 0%, 60%, 0.7);
+  --chat-marker-border-rgb: 153, 153, 153;
+  --chatlist-icon: rgba(241, 241, 242, 0.63);
+  --chatlist-icon-rgb: 241, 241, 242;
+  --checkbox-background: var(--Goldenrod) !important;
+  --checkbox-background-rgb: var(--Goldenrod-Rgb) !important;
+  --checkbox-mark: white !important;
+  --checkbox-mark-rgb: var(--White-Rgb) !important;
+  --compose-background: var(--Police-Blue) !important;
+  --compose-background-rgb: var(--Police-Blue-Rgb) !important;
+  --compose-background-focused: #213945;
+  --compose-background-focused-rgb: 33, 57, 69;
+  --compose-border: var(--Police-Blue) !important;
+  --compose-border-rgb: var(--Police-Blue-Rgb) !important;
+  --compose-border-focused: #294654;
+  --compose-border-focused-rgb: 41, 70, 84;
+  --compose-panel-background: #1e2428;
+  --compose-panel-background-rgb: 29.591, 36.36026, 40.309;
+  --compose-primary: white !important;
+  --compose-primary-rgb: var(--White-Rgb) !important;
+  --conversation-panel-background: var(--Maastricht-Blue) !important;
+  --conversation-panel-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --conversation-panel-border: rgba(241, 241, 242, 0.12);
+  --conversation-panel-border-rgb: 241, 241, 242;
+  --danger: #ef697a;
+  --danger-rgb: 239, 105, 122;
+  --drawer-background: var(--Maastricht-Blue) !important;
+  --drawer-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --drawer-background-deep: var(--Maastricht-Blue) !important;
+  --drawer-background-deep-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --drawer-gallery-background: var(--Maastricht-Blue) !important;
+  --drawer-gallery-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --drawer-header-title: var(--White) !important;
+  --drawer-header-title-rgb: var(--White-Rgb) !important;
+  --drawer-section-background: var(--Maastricht-Blue) !important;
+  --drawer-section-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --dropdown-background: var(--Yankees-Blue) !important;
+  --dropdown-background-rgb: var(--Yankees-Blue-Rgb) !important;
+  --dropdown-background-hover: var(--Police-Blue) !important;
+  --dropdown-background-hover-rgb: var(--Police-Blue-Rgb) !important;
+  --empty-state-background: var(--Police-Blue) !important;
+  --empty-state-background-rgb: var(--Police-Blue-Rgb) !important;
+  --empty-state-icon: #777c7f;
+  --empty-state-icon-rgb: 119, 124, 127;
+  --focus: #68bbe4;
+  --focus-rgb: 104, 187, 228;
+  --focus-animation: rgba(104, 187, 228, 0.26);
+  --focus-animation-rgb: 104, 187, 228;
+  --focus-animation-deeper: rgba(104, 187, 228, 0.32);
+  --focus-animation-deeper-rgb: 104, 187, 228;
+  --focus-lighter: rgba(104, 187, 228, 0.12);
+  --focus-lighter-rgb: 104, 187, 228;
+  --gray-600: white !important;
+  --gray-900-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --green-deep: var(--Goldenrod) !important;
+  --green-deep-rgb: var(--Goldenrod-Rgb) !important;
+  --highlight: var(--Goldenrod) !important;
+  --highlight-rgb: var(--Goldenrod-Rgb) !important;
+  --icon: var(--White) !important;
+  --icon-rgb: var(--White-Rgb) !important;
+  --icon-ack: var(--Goldenrod) !important;
+  --icon-ack-rgb: var(--Goldenrod-Rgb) !important;
+  --icon-disabled: white !important;
+  --icon-disabled-rgb: var(--White-Rgb) !important;
+  --icon-fixed: #828689;
+  --icon-fixed-rgb: 130, 134, 137;
+  --icon-lighter: rgba(241, 241, 242, 0.801) !important;
+  --icon-lighter-rgb: 241, 241, 242 !important;
+  --icon-search-back: #73787b;
+  --icon-search-back-rgb: 115, 120, 123;
+  --icon-strong: #c5c6c8;
+  --icon-strong-rgb: 197, 198, 200;
+  --incoming-background: var(--Police-Blue) !important;
+  --incoming-background-rgb: var(--Police-Blue-Rgb) !important;
+  --incoming-background-deeper: var(--Yankees-Blue) !important;
+  --incoming-background-deeper-rgb: var(--Yankees-Blue-Rgb) !important;;
+  --incoming-background-highlight: #ccc;
+  --incoming-background-highlight-rgb: 204, 204, 204;
+  --incoming-primary: white !important;
+  --incoming-primary-rgb: var(--White-Rgb) !important;
+  --input-border-active: var(--Goldenrod) !important;
+  --input-border-active-rgb: var(--Goldenrod-Rgb) !important;
+  --input-placeholder: white !important;
+  --input-placeholder-rgb: var(--White-Rgb) !important;
+  --intro-background: var(--Maastricht-Blue) !important;
+  --intro-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --intro-border: var(--Goldenrod) !important;
+  --intro-border-rgb: var(--Goldenrod-Rgb) !important;
+  --intro-secondary: #a6a8aa;
+  --intro-secondary-rgb: 166, 168, 170;
+  --inverse: white !important;
+  --inverse-rgb: var(--White-Rgb) !important;
+  --labels-icon: rgba(241, 241, 242, 0.4);
+  --labels-icon-rgb: 241, 241, 242;
+  --link: #68bbe4;
+  --link-rgb: 104, 187, 228;
+  --live-location-footer-background: rgba(19, 28, 33, 0.9);
+  --live-location-footer-background-rgb: 18.6, 28.22, 33.4;
+  --live-location-glow: rgba(37, 211, 102, 0.3);
+  --live-location-glow-rgb: 37, 211, 102;
+  --live-location-glow-stale: rgba(255, 0, 31, 0.3);
+  --live-location-glow-stale-rgb: 255, 0, 31;
+  --location-cluster-background: #131c21;
+  --location-cluster-background-rgb: 18.6, 28.22, 33.4;
+  --media-editor-control: #1c313f;
+  --media-editor-control-rgb: 28, 49, 63;
+  --media-viewer-background: var(--Maastricht-Blue) !important;
+  --media-viewer-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --media-viewer-button-background: var(--Police-Blue) !important;
+  --media-viewer-button-background-rgb: var(--Police-Blue-Rgb) !important;
+  --media-viewer-button-icon: #f1f1f2;
+  --media-viewer-button-icon-rgb: 241, 241, 242;
+  --menu-tabs-list-active: var(--Dark-Goldenrod) !important;
+  --menu-tabs-list-active-rgb: var(--Dark-Goldenrod-Rgb) !important;
+  --message-background-deep: rgba(9, 14, 17, 0.35);
+  --message-background-deep-rgb: 9.3, 13.74, 16.7;
+  --message-placeholder-icon: hsla(0, 0%, 80%, 0.3);
+  --message-placeholder-icon-rgb: 204, 204, 204;
+  --message-primary: rgba(241, 241, 242, 0.95);
+  --message-primary-rgb: 241, 241, 242;
+  --message-selection-highlight: rgba(241, 241, 242, 0.05);
+  --message-selection-highlight-rgb: 241, 241, 242;
+  --modal-backdrop: rgba(var(--Maastricht-Blue-Rgb), 0.85) !important;
+  --modal-backdrop-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --modal-backdrop-solid: var(--Maastricht-Blue) !important;
+  --modal-backdrop-solid-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --modal-background: var(--Yankees-Blue) !important;
+  --modal-background-rgb: var(--Yankees-Blue-Rgb) !important;
+  --notification-biz-background: #20272b;
+  --notification-biz-background-rgb: 31.75, 39.01316, 43.25;
+  --notification-biz-text: #55fad9;
+  --notification-biz-text-rgb: 85, 250, 217;
+  --notification-e2e-background: var(--Police-Blue) !important;
+  --notification-e2e-background-rgb: var(--Police-Blue-Rgb) !important;
+  --notification-e2e-icon: #fad964;
+  --notification-e2e-icon-rgb: 250, 217, 100;
+  --notification-e2e-text: #fad964;
+  --notification-e2e-text-rgb: 250, 217, 100;
+  --notification-text: rgba(241, 241, 242, 0.4);
+  --notification-text-rgb: 241, 241, 242;
+  --outgoing-background: var(--Yankees-Blue) !important;
+  --outgoing-background-rgb: var(--Yankees-Blue-Rgb) !important;
+  --outgoing-background-deeper: var(--Police-Blue) !important;
+  --outgoing-background-deeper-rgb: var(--Police-Blue-Rgb) !important;
+  --outgoing-background-highlight: #ccc;
+  --outgoing-background-highlight-rgb: 204, 204, 204;
+  --overlay: #090e11;
+  --overlay-rgb: 9.3, 13.74, 16.7;
+  --panel-background: var(--Yankees-Blue) !important;
+  --panel-background-rgb: var(--Yankees-Blue-Rgb) !important;
+  --panel-background-active: #1e2529;
+  --panel-background-active-rgb: 30, 37, 41;
+  --panel-background-colored: var(--Goldenrod) !important;
+  --panel-background-colored-rgb: var(--Goldenrod-Rgb) !important;
+  --panel-background-colored-deeper: var(--Goldenrod) !important;
+  --panel-background-colored-deeper-rgb: var(--Goldenrod-Rgb) !important;
+  --panel-background-deep: var(--Police-Blue) !important;
+  --panel-background-deep-rgb: var(--Police-Blue-Rgb) !important;
+  --panel-background-deeper: var(--Maastricht-Blue) !important;
+  --panel-background-deeper-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --panel-background-hover: #1f262a;
+  --panel-background-hover-rgb: 31, 38, 42;
+  --panel-background-lighter: var(--Maastricht-Blue) !important;
+  --panel-background-lighter-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --panel-header-background: var(--Maastricht-Blue) !important;
+  --panel-header-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --panel-header-icon: #b1b3b5;
+  --panel-header-icon-rgb: 177, 179, 181;
+  --panel-primary: rgba(241, 241, 242, 0.35);
+  --panel-primary-rgb: 241, 241, 242;
+  --payment-amount: #00a593;
+  --payment-amount-rgb: 0, 164.8, 146.90743;
+  --payment-status-failed: #ef697a;
+  --payment-status-failed-rgb: 239, 105, 122;
+  --payment-status-processing: rgba(241, 241, 242, 0.45);
+  --payment-status-processing-rgb: 241, 241, 242;
+  --payment-status-success: #40cf6c;
+  --payment-status-success-rgb: 64, 207, 108;
+  --payment-status-waiting: rgba(241, 241, 242, 0.45);
+  --payment-status-waiting-rgb: 241, 241, 242;
+  --photopicker-overlay-background: rgba(35, 43, 47, 0.8);
+  --photopicker-overlay-background-rgb: 35, 43, 47;
+  --popup-panel-background: rgba(9, 14, 17, 0.2);
+  --popup-panel-background-rgb: 9.3, 13.74, 16.7;
+  --primary: #d4d5d7;
+  --primary-rgb: 212, 213, 215;
+  --primary-strong: rgba(241, 241, 242, 0.92);
+  --primary-strong-rgb: 241, 241, 242;
+  --primary-stronger: rgba(241, 241, 242, 0.88);
+  --primary-stronger-rgb: 241, 241, 242;
+  --primary-title: rgba(241, 241, 242, 0.88);
+  --primary-title-rgb: 241, 241, 242;
+  --product-thumb-background: #20272b;
+  --product-thumb-background-rgb: 31.75, 39.01316, 43.25;
+  --product-thumb-background-deeper: #313c43;
+  --product-thumb-background-deeper-rgb: 49.022, 60.23632, 66.778;
+  --progress-background: #2a2f32;
+  --progress-background-rgb: 41.6, 47.46667, 50.4;
+  --progress-primary: #0c897c;
+  --progress-primary-rgb: 12, 137, 124;
+  --ptt-blue: #4fc3f7;
+  --ptt-blue-rgb: 79, 195, 247;
+  --ptt-button-cancel: rgba(229, 57, 53, 0.8);
+  --ptt-button-cancel-rgb: 229, 57, 53;
+  --ptt-button-send: rgba(9, 210, 97, 0.8);
+  --ptt-button-send-rgb: 9, 210, 97;
+  --ptt-gray: rgba(241, 241, 242, 0.4);
+  --ptt-gray-rgb: 241, 241, 242;
+  --ptt-green: #09d261;
+  --ptt-green-rgb: 9, 210, 97;
+  --ptt-message-blue: #68bbe4;
+  --ptt-message-blue-rgb: 104, 187, 228;
+  --quick-action-button: rgba(241, 241, 242, 0.5);
+  --quick-action-button-rgb: 241, 241, 242;
+  --quick-action-button-background: rgba(9, 14, 17, 0.6);
+  --quick-action-button-background-rgb: 9.3, 13.74, 16.7;
+  --rich-text-panel-background: var(--Yankees-Blue) !important;
+  --rich-text-panel-background-rgb: var(--Yankees-Blue-Rgb) !important;
+  --search-input-background: var(--Yankees-Blue) !important;
+  --search-input-background-rgb: var(--Yankees-Blue-Rgb) !important;
+  --secondary: rgba(241, 241, 242, 0.63);
+  --secondary-rgb: 241, 241, 242;
+  --secondary-light: white !important;
+  --secondary-light-rgb: var(--White-Rgb) !important;
+  --secondary-lighter: white !important;
+  --secondary-lighter-rgb: var(--White-Rgb) !important;
+  --secondary-stronger: rgba(241, 241, 242, 0.8);
+  --secondary-stronger-rgb: 241, 241, 242;
+  --shadow: #000;
+  --shadow-rgb: 0, 0, 0;
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-light-rgb: 0, 0, 0;
+  --spinner-default: #75787a;
+  --spinner-default-rgb: 117, 120, 122;
+  --spinner-highlight: var(--Goldenrod) !important;
+  --spinner-highlight-rgb: var(--Goldenrod-Rgb) !important;
+  --spinner-incoming: #63686b;
+  --spinner-incoming-rgb: 99, 104, 107;
+  --spinner-outgoing: #4c7a75;
+  --spinner-outgoing-rgb: 76, 122, 117;
+  --startup-background: var(--Maastricht-Blue) !important;
+  --startup-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --status-background: var(--Maastricht-Blue) !important;
+  --status-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --status-background-hover: var(--Police-Blue) !important;
+  --status-background-hover-rgb: var(--Police-Blue-Rgb) !important;
+  --status-primary: #fff;
+  --status-primary-rgb: 255, 255, 255;
+  --status-secondary: hsla(0, 0%, 100%, 0.55);
+  --status-secondary-rgb: 255, 255, 255;
+  --status-secondary-stronger: #b3b3b3;
+  --status-secondary-stronger-rgb: 179, 179, 179;
+  --success: var(--Goldenrod) !important;
+  --success-rgb: var(--Goldenrod-Rgb) !important;
+  --suspicious-background: rgba(239, 105, 122, 0.8);
+  --suspicious-background-rgb: 239, 105, 122;
+  --system-message-background: var(--Police-Blue) !important;
+  --system-message-background-rgb: var(--Police-Blue-Rgb) !important;
+  --system-message-text: rgba(241, 241, 242, 0.92);
+  --system-message-text-rgb: 241, 241, 242;
+  --teal: var(--Goldenrod) !important;
+  --teal-rgb: var(--Goldenrod-Rgb) !important;
+  --teal-hover: #00b7a1;
+  --teal-hover-rgb: 0, 183, 161;
+  --teal-pale: var(--Goldenrod) !important;
+  --teal-pale-rgb: var(--Goldenrod-Rgb) !important;
+  --thumb-border-active: #75787a;
+  --thumb-border-active-rgb: 117, 120, 122;
+  --thumb-border-viewer-active: #75787a;
+  --thumb-border-viewer-active-rgb: 117, 120, 122;
+  --toast-background: rgba(var(--Yankees-Blue-Rgb), 0.96) !important;
+  --toast-background-rgb: 9.3, 13.74, 16.7;
+  --tooltip-background: rgba(43, 45, 47, 0.85);
+  --tooltip-background-rgb: 42.60978, 45.37948, 46.89022;
+  --typing: var(--Goldenrod) !important;
+  --typing-rgb: var(--Goldenrod-Rgb) !important;
+  --unread-background: var(--Goldenrod) !important;
+  --unread-background-rgb: var(--Goldenrod-Rgb) !important;
+  --unread-bar-background: rgba(var(--Goldenrod-Rgb), 0.6) !important;
+  --unread-bar-background-rgb: var(--Goldenrod-Rgb) !important;
+  --unread-marker-background: var(--Goldenrod) !important;
+  --unread-marker-background-rgb: var(--Goldenrod-Rgb) !important;
+  --unread-marker-text: #131c21;
+  --unread-marker-text-rgb: 18.6, 28.22, 33.4;
+  --video-player-background: #000;
+  --video-player-background-rgb: 0, 0, 0;
+  --video-primary: #fff;
+  --video-primary-rgb: 255, 255, 255;
+  --voip-accept-background: #70db91;
+  --voip-accept-background-rgb: 112, 219, 145;
+  --voip-background: #262626;
+  --voip-background-rgb: 38, 38, 38;
+  --voip-background-deep: #000;
+  --voip-background-deep-rgb: 0, 0, 0;
+  --voip-primary: #fff;
+  --voip-primary-rgb: 255, 255, 255;
+  --voip-reject-background: #e54b40;
+  --voip-reject-background-rgb: 229, 75, 64;
+  --win32-title-primary: #fff;
+  --win32-title-primary-rgb: 255, 255, 255;
+}
+
+.web {
+  --startup-background: var(--Maastricht-Blue) !important;
+  --startup-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+}
+
+/*Icons*/
+.dark
+  span[data-icon="checkbox-round-checked"]
+  path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"], .dark span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"] {
+  fill: var(--Goldenrod) !important;
+}
+
+/*QR Code Window*/
+html[dir] .dark .landing-wrapper:before {
+  background-color: var(--Dark-Goldenrod) !important;
+}
+
+html[dir] .dark .landing-window {
+  background-color: var(--Yankees-Blue) !important;
+}
+
+.dark .landing-title {
+  color: white !important;
+}
+
+html[dir] .dark ._1QMFu{
+  border: 5px solid white !important;
 }
-
-.dark ._1WMT2._2V_Wj {
-    z-index: 0 !important;
-}
-
-html[dir] .dark ._1WMT2._2V_Wj, html[dir] .dark ._3yth3, html[dir] .dark ._26pkE,html[dir] .dark ._2MSJr, html[dir] .dark ._3nuGo {
-    background-color: var(--Police-Blue) !important;
-}
-
-.dark ._1WMT2._2V_Wj:after, html[dir] .dark ._1WMT2._2V_Wj:before, html[dir] .dark ._3EeLD {
-    background-color: transparent !important;
-}
-
-html[dir] .dark ._3j8Pd._1eXOh, html[dir] .dark ._3j8Pd.GPmgf, html[dir] .dark ._3j8Pd:active {
-    background-color: rgba(var(--White-Rgb), .1) !important;
-}
-
-html[dir] .dark ._3jHKU {
-    background-color: var(--Goldenrod) !important;
-}
-
-.dark ._2BA8e {
-    stroke: var(--Goldenrod) !important;
-}
-
-html[dir] .dark .qTFAl._3Z2tD, html[dir] .dark .qTFAl:hover {
-    background-color: rgba(var(--Dark-Goldenrod-Rgb), .1) !important;
-}
-
-html[dir] .dark ._1ccjW:after, html[dir] .dark ._3PQ7V, html[dir] .dark ._1puWZ, html[dir] .dark ._2xikZ, .dark ._15wNI, html[dir] .dark .landing-wrapper:before, html[dir] .dark ._27U_m:before, html[dir] .dark ._2XHj8, html[dir] .dark ._3D31H, html[dir] .dark ._22oFl {
-    background-color: var(--Dark-Goldenrod) !important;
-}
-
-html[dir] .dark ._1WMT2:before, html[dir] .dark ._3RWII, html[dir] .dark ._70TS5 {
-    background-color: transparent !important;
-}
-
-.dark ._15wNI, html[dir] .dark ._1qNwV:after {
-    border-color: var(--Dark-Goldenrod) !important;
-}
-
-html[dir] .dark ._1qNwV, html[dir] .dark ._3RiLE, #initial_startup, #startup, html[dir] .dark ._3Fq9Y.iEUx2, html[dir] .dark ._1T8rb, html[dir] .dark .NuujD, html[dir] .dark .NeQRT, .dark ._2l-YP:first-child, .dark .CDuBw:nth-child(1), .dark ._1m6L6._1rIeG:first-child {
-    background-color: var(--Maastricht-Blue) !important;
-}
-
-.dark .Qk8nZ, .dark .tzihe, .dark .Jeekp, .dark ._2HHbr, .dark .Sl-9e, .dark ._1zGQT, html[dir=ltr] .dark ._3MYI2, .dark ._1o0MN, .dark ._35Zop:before, .dark ._2JIoO, .dark ._28Bny, .dark ._3H4MS, .dark .xD91K, .dark ._0LqQ, .dark ._3dwyT, .dark input, .dark ::placeholder, .dark ._1qWhd, .dark ._13U-5, .dark ._2V2qB, .dark ._6xQdq, .dark .Fzl83:before, .dark .bHCVK, .dark ._357v7, .dark select, .dark ._3u328 .copyable-text .selectable-text, .dark ._1wt6r, .dark ._19vo_, .dark ._1drsQ, .dark .kiodY .kyJvR, .dark .a7otO, .dark ._3qb2N, .dark ._2gliA, .dark .landing-title, .dark ._3uHCS, .dark div[class="_2Bfgm _2MyYN"], .dark .i1XSV._3Q3ui, .dark .jLybP:before, .dark .Y1iVg, .dark ._2XHj8 .nGgVY, .dark ._3RQIp, .dark ._2cR8w, .dark ._17hud, .dark .JmH7x, .dark ._2IHkF, .dark ._3JxFB, .dark ._23MBZ, html[dir] .dark ._3fktq, .dark ._1lxsr, .dark ._2NdXo, .dark ._8fE-g, .dark ._2v02G, .dark ._12pGw strong, .dark ._2LRBk, .dark ._1goQ0, .dark ._1Wv89, .dark ._2MoEz, .dark ._3FeAD ._3u328, .dark .ZCg9j, .dark ._3VIru {
-    color: white !important;
-}
-
-.dark ._2heX1 {
-    color: var(--Maastricht-Blue) !important;
-}
-
-.dark .color-6 {
-    color: var(--Maize) !important;
-}
-
-.dark .bg-color-6 {
-    background-color: var(--Maize) !important
-}
-.dark ._1WD8C ._2DP8_{
-    opacity: 1;
-}
-
-html[dir] .dark .jZhyM {
-    border-radius: 0% !important;
-}
-
-.dark ._1qNwV a, .dark ._3Nnrl, .dark ._23_1v {
-    color: var(--Dark-Goldenrod) !important;
-}
-
-.dark a, html[dir] .dark .color-1, html[dir=ltr] .dark .color-1, .dark .r7sRK, .dark ._3he1q, .dark ._1T8rb, .dark ._2wn58, .dark .Ir_Ne, .dark ._1Jc9f, .dark .FPZFa, .dark ._2ZAIy {
-    color: var(--Goldenrod) !important;
-}
-
-html[dir] .dark .bg-color-1, html[dir] .dark ._3PQ7V:hover, html[dir] .dark .P6z4j, html[dir] .dark .Orl3a, html[dir] .dark ._27U_m, html[dir] .dark ._1g8sv, html[dir] .dark ._1WD8C {
-    background-color: var(--Goldenrod) !important;
-}
-
-html[dir] .dark ._3UTE3 {
-    border-color: var(--Slate-Gray) !important;
-}
-
-.dark ._2xbq0 {
-    color: inherit !important;
-}
-
-html[dir] .dark ._23_1v:hover, html[dir] .dark ._3BqnP._3VXiW, html[dir] .dark .message-in ._2Wx_5, html[dir] .dark ._1sFYw, html[dir] .dark ._2UaNq._3mMX1, html[dir] .dark .eiCXe, html[dir] .dark ._2zCfw, html[dir] .dark ._1WMT2._1lakC, html[dir] .dark ._1WMT2._2nA3s, html[dir] .dark ._26JG5:hover, .dark option, html[dir] .dark ._2hMsh, html[dir] .dark ._1i7uJ, html[dir] .dark .message-out ._2Wx_5, html[dir] .dark .gxf3C, html[dir] .dark .message-in ._2Hp95 ._3qAvH, html[dir] .dark .a7otO, html[dir] .dark ._2sOZc, html[dir] .dark ._3KRbU, html[dir] .dark .message-out ._2Hp95 ._3qAvH {
-    background-color: var(--Police-Blue) !important;
-}
-
-.dark ._3PQ7V, .dark ._3MYI2, .dark ._3jHKU, .dark .P6z4j, .dark .Y1iVg._3caqI, .dark ._3D31H, .dark ._22oFl, .dark ._1WD8C {
-    color: var(--Maastricht-Blue) !important;
-}
-
-html[dir] .dark ._2n0jo, html[dir] .dark ._1WMT2._1lakC:after, html[dir] .dark ._3Jvyf, html[dir] .dark ._2hHc6, html[dir] .dark .ZP8RM, html[dir] .dark ._1HjMu, html[dir] .dark .cGLoy, html[dir] .dark ._2UaNq, html[dir] .dark .r7sRK, html[dir] .dark ._1YoG6, .dark .rK2ei, html[dir] .dark ._1w-mX, html[dir] .dark ._2LSbZ, html[dir] .dark ._26JG5, html[dir] .dark ._3fs0K, html[dir] .dark ._2i7Ej, html[dir] .dark ._13mgZ, html[dir] .dark ._2avTY, html[dir] .dark ._2Qm0c, html[dir] .dark ._1mJO-, html[dir=ltr] .dark ._3HCkv, html[dir=rtl] .dark ._3HCkv, html[dir] .dark .RxbUw, html[dir] .dark .kiodY, html[dir=ltr] .dark ._2xINO, html[dir] .dark ._2aUit, html[dir] .dark ._3vndg, html[dir] .dark .s4BtI, html[dir] .dark ._19YfI, html[dir] .dark .jqdrp, html[dir] .dark ._1ebw2, html[dir] .dark .OWYLS, html[dir] .dark ._2sn3C, html[dir] .dark ._3fktq, html[dir] .dark .landing-main {
-    background-color: var(--Yankees-Blue) !important;
-}
-
-html[dir] .dark ._3Fq9Y {
-    background-color: rgba(var(--Yankees-Blue-Rgb), .85) !important;
-}
-
-.dark div[tabindex="-1"] ._1WMT2 {
-    border-top: 1px solid var(--Police-Blue) !important;
-}
-
-html[dir] .dark ._13mgZ, html[dir] .dark ._2WwbV {
-    border: 1px solid white !important;
-}
-
-html[dir] .dark ._2LSbZ {
-    box-shadow: 0 1px 3px var(--Yankees-Blue) !important;
-}
-
-html[dir] .dark ._2rGVQ {
-    background: var(--Yankees-Blue) !important;
-}
-
-html[dir] .dark ._2UaNq._3mMX1:after, html[dir] .dark ._2UaNq:hover:after, .dark .hover {
-    border-top: none !important;
-    border-bottom: none !important;
-}
-
-html[dir] .dark ._2UaNq {
-    border-top: 1px solid var(--Police-Blue) !important;
-    border-bottom: 1px solid var(--Police-Blue) !important;
-}
-
-html[dir] .dark .cGLoy {
-    border-bottom: 1px solid var(--Police-Blue) !important;
-}
-
-.dark ._3yudO {
-    stroke: var(--Goldenrod) !important;
-}
-
-.dark ._1t84_._3VIru, .dark .ZCg9j.Ryz_m {
-    color: var(--Goldenrod) !important;
-}
-
-html[dir] .dark ._2WP9Q, html[dir] .dark ._2n0jo {
-    border-top: none !important;
-}
-
-.dark .X7YrQ {
-    z-index: 0 !important;
-}
-
-html[dir] .dark ._3p0T6 {
-    background-color: var(--Slate-Gray) !important;
-}
-
-html[dir=ltr] .dark ._2DxRd {
-    margin-left: 0 !important;
-}
-
-html[dir] .dark ._2DxRd {
-    border-top-color: var(--Slate-Gray) !important;
-}
-
-html[dir] .dark ._26JG5+._26JG5 ._27Ie2, html[dir] .dark ._26JG5:hover+._26JG5:before {
-    border-top: none !important;
-}
-
-html[dir=ltr] .dark ._2i7Ej {
-    border-left: none !important;
-}
-
-.dark ._3MbsG {
-    border-right-color: var(--Maastricht-Blue) !important;
-}
-html[dir=ltr] .dark ._1KfC8{
-    border-right-color: var(--White) !important;
-}
-html[dir] .dark ._1KfC8{
-    border-bottom-color: var(--White) !important;
-}
-
-html[dir] .dark .lC2xi {
-    background-color: rgba(var(--Maastricht-Blue-Rgb), .6) !important;
-}
-
-html[dir] .dark ._8C3uJ {
-    border: 5px dashed rgba(var(--White-Rgb), .3) !important;
-}
-
-.dark ._8C3uJ {
-    color: rgba(var(--White-Rgb), .3) !important;
-}
-
-html[dir] .dark ._5UNoc ._3hnO5 {
-    border-bottom-color: var(--Dark-Goldenrod) !important;
-}
-
-html[dir=ltr] .dark ._3fs0K {
-    border-left-color: var(--Yankees-Blue) !important;
-}
-
-html[dir=ltr] .dark ._1qNwV {
-    border-left: 1px solid rgba(var(--Yankees-Blue-Rgb), 1) !important;
-}
-
-.dark ._1Zo-R {
-    border-color: rgba(var(--White-Rgb), .50)!important;
-}
-
-html[dir=ltr] .dark ._15CAo._3EQsG {
-    background: linear-gradient(90deg, hsla(94, 78%, 87%, 0) 0, var(--Police-Blue) 50%) !important;
-}
-
-html[dir=ltr] .dark ._15CAo._2Nkc4 {
-    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, var(--Police-Blue) 50%) !important;
-}
-
-html[dir] .dark ._2a2hS {
-    background-color: white !important;
-}
-
-.dark .XqrVN {
-    stroke: var(--Goldenrod) !important;
-}
-
-html[dir=ltr] .dark ._1_keJ {
-    border-left-color: var(--Maastricht-Blue) !important;
-}
-
-html[dir=ltr] .dark ._1F9Ap, html[dir=rtl] .dark ._1F9Ap {
-    text-shadow: 0px 0px 0.5px white !important;
-}
-
-.dark ._1F9Ap:before {
-    color: var(--Slate-Gray) !important;
-}
-
-html[dir] .dark ._1AUdd._1SsXF, html[dir] .dark ._3qblR._1SsXF, html[dir] .dark ._2a6mc, html[dir] .dark ._1o6AT ._1mrMQ, html[dir] .dark ._3cukQ ._1mrMQ, html[dir] .dark .message-out ._2HTIU {
-    background-color: var(--Dark-Electric-Blue) !important;
-}
-
-.dark .fzCXy {
-    opacity: .12 !important;
-}
-
-html[dir] .dark ._2HyTU {
-    background-color: transparent !important;
-}
-
-html[dir] .dark ._2AqZl {
-    background-color: rgba(var(--Yankees-Blue-Rgb), .6) !important;
-}
-
-html[dir] .dark ._3fs0K:after {
-    background-color: transparent !important;
-    border-bottom: 0px solid rgba(0, 0, 0, .08) !important;
-}
-
-html[dir] .dark ._1Jzz1, html[dir] .dark ._1KDYa, html[dir] .dark ._2KgjI {
-    background-color: var(--Yankees-Blue) !important;
-}
-
-html[dir] .dark .app {
-    background-image: none !important;
-}
-
-html[dir] .dark ._3Xx0y {
-    background-color: rgba(var(--Dark-Goldenrod-Rgb), .25) !important;
-    border-bottom: rgba(var(--Dark-Goldenrod-Rgb), .08) !important;
-    border-top: 1px solid rgba(var(--Dark-Goldenrod-Rgb), .15) !important;
-}
-
-.dark ._3Xx0y, .dark ._2lKjK, .dark .BJa6O, .dark ._3FeAD .wjdTm, .dark ._2xHOS, .dark ._3Yulp, .dark ._26pkE, .dark ._21zbN {
-    color: white !important;
-}
-
-html[dir] .dark ._1lo-H {
-    background-color: var(--Dark-Goldenrod) !important;
-}
-
-html[dir] .dark .IMn_C, html[dir] .dark ._2ILbv ._1Dfrr:hover {
-    background-color: var(--Maastricht-Blue) !important;
-}
-
-html[dir] .dark .qlhJH hr {
-    border-top: 1px solid var(--Dark-Electric-Blue) !important;
-}
-
-html[dir=ltr] .dark ._2UaNq._30Q1W ._3H4MS {
-    color: white !important;
-    text-shadow: 0px 0px 0.5px white !important;
-}
-
-html[dir] .dark ._1PENu {
-    border-top: 1px solid var(--Dark-Electric-Blue) !important;
-}
-
-html[dir=ltr] .dark ._30sf0 {
-    border-left: none !important;
-}
-html[dir] .dark ._2I-yY {
-    background-color: none;
-}
-
-html[dir] .dark .FPZFa {
-    border: 1px solid var(--Goldenrod) !important;
-}
-
-html[dir] .dark .I72vi {
-    background-color: var(--Yankees-Blue) !important;
-}
-
-.dark .I72vi {
-    overflow: auto !important;
-}
-
-html[dir] .dark ._2RT36, .dark ._11ozL {
-    border: 5px solid white !important;
-}
-html[dir=ltr] .dark ._2zynu{
-    border-left: 1px solid var(--Maastricht-Blue);
-}
-
-html[dir] .dark ._2Fvnm ._3ogpF {
-    border-bottom: 2px solid var(--Goldenrod) !important;
-}
-
-.dark .Am8s6 {
-    color: rgba(var(--White-Rgb), .5) !important;
-}
-
-/* #region media */
-
-@media screen and (min-width: 1301px) {
-    html[dir=ltr] .dark ._3fs0K {
-        border-right-color: var(--Yankees-Blue) !important;
-    }
-}
-
-@media screen and (min-width: 1301px) {
-    .dark .two ._1jxtm {
-        flex: 71% !important;
-    }
-}
-
-/* #endregion media */
-
-/* #region Icons */
-.dark span[data-icon="chevron-right-text"] path{
-    fill: hsla(220, 4%, 84%, .97) !important;
-}
-
-.dark .ZCg9j, .dark ._3VIru, .dark ._1DnZY, .dark ._3I7nT, .dark ._3DxjC, .dark ._1ZMSM, .dark .WVFpp, .dark ._2-qoA, .dark ._2UaNq._3mMX1 .xD91K, .dark ._1mGV6, html[dir] .dark ._2UaNq._30Q1W .xD91K, .dark .ofSdH, .dark .kiodY .qfKkX, .dark .hjJpn, ._3M-N- {
-    color: white !important;
-}
-
-.dark ._1g8sv.NOJWi {
-    color: var(--Maastricht-Blue) !important;
-}
-
-.dark ._3rqs1 {
-    color: var(--Dark-Goldenrod) !important;
-}
-
-.dark .B9BIa path.background, .dark span[data-icon="default-group"] path[d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25z"] {
-    fill: var(--Dark-Electric-Blue) !important;
-}
-
-.dark span[data-icon="ptt-out-blue"] path[fill="#DDF6C9"], .dark span[data-icon="ptt-in-blue"] path[fill="#FFF"]{
-    fill: var(--Police-Blue) !important;
-}
-
-html[dir] .dark .qfKkX>span[data-icon="x-light"] path, .dark .qfKkX>span[data-icon="back-light"] path, .dark span[data-icon="send-light"] path, .dark span[data-icon="audio-download"] path, .dark ._1g8sv.NOJWi>span[data-icon="checkmark-light"] path, .dark ._1g8sv>span[data-icon="checkmark-light"] path, .dark ._2MUsN>span[data-icon="x-alt-small"] path, .dark ._1g8sv.NOJWi>span[data-icon="send-light"] path, .dark span[data-icon="menu-white"] path, .dark span[data-icon="forward-light"] path, .dark span[data-icon="return-light"] path {
-    fill: var(--White) !important;
-    fill-opacity: 100% !important;
-}
-
-.dark span[data-icon="audio-download"] path, .dark ._2wn58 svg path {
-    fill: var(--Dark-Goldenrod) !important;
-    fill-opacity: 1;
-}
-
-.dark .darwin .-XQxp._1oNFt path, .dark .-XQxp._1oNFt path, .dark .win32 .-XQxp._1oNFt path, .dark span[data-icon="status-v3-unread"] path[d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"], .dark span[data-icon="checkbox-round-checked"] path[d="M10 .25c5.385 0 9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S.25 15.385.25 10 4.615.25 10 .25z"], .dark span[data-icon="audio-cancel-noborder"] path {
-    fill: var(--Goldenrod) !important;
-}
-
-.dark span[data-icon="audio-play"] path, .dark span[data-icon="audio-pause"] path, .dark ._2VVfP span[data-icon="lock-small"] path, .dark span[data-icon="emoji-input"] path, .dark ._1tyVr span[data-icon="settings-blocked"] path, .dark ._1tyVr>span[data-icon="settings-notifications"] path, .dark ._1tyVr>span[data-icon="settings-wallpaper"] path, .dark ._1tyVr>span[data-icon="settings-help"] path, .dark ._1tyVr>span[data-icon="add-user"] path, .dark span[data-icon="send-light"] path, .dark span[data-icon="forward"] path, .dark span[data-icon="copy"] path, .dark span[data-icon="revoke"] path, .dark span[data-icon="chevron-right-text"] path, html[dir] .dark span[data-icon="recalled-out"] path, html[dir] .dark span[data-icon="recalled-in"] path, html[dir] .dark span[data-icon="status-v3"] path, .dark span[data-icon="x-alt"] path, html[dir] .dark span[data-icon="x-alt-small"] path, html[dir] .dark span[data-icon="highly-forwarded"] path, html[dir] .dark span[data-icon="down"] path, html[dir] .dark span[data-icon="forwarded"] path, .dark span[data-icon="x"] path, .dark span[data-icon="smiley"] path, .dark span[data-icon="gif"] path, .dark span[data-icon="sticker"] path, .dark span[data-icon="chevron-right-alt"] path, .dark ._3Ux6T span[data-icon="star"] path, .dark ._3f5U8>span[data-icon="x"] path, .dark ._3f5U8>span[data-icon="unstar-btn"] path, .dark span[data-icon="delete"] path, .dark ._3f5U8>span[data-icon="star-btn"] path, .dark ._3fktq>span[data-icon="add-alt"] path, .dark ._3j8Pd span[data-icon="menu"] path, .dark span[data-icon="download"] path, .dark span[data-icon="plus"] path, .dark span[data-icon="minus"] path, .dark span[data-icon="status-ptt-gray"] path {
-    fill: white !important;
-    fill-opacity: 100% !important;
-}
-
-/* #endregion Icons */
-
-/* #region Scrollbar */
-
-.dark ::-webkit-scrollbar-thumb {
-    background-color: rgba(var(--Dark-Goldenrod-Rgb),1) !important;
-}
-
-.dark ::-webkit-scrollbar-track {
-    background: var(--Yankees-Blue) !important;
-}
-
-/* #endregion Scrollbar */
