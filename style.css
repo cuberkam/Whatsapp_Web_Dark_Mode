@@ -204,6 +204,8 @@ html[dir] .dark ._1ByLM {
   --compose-border-rgb: var(--Police-Blue-Rgb) !important;
   --compose-border-focused: #294654;
   --compose-border-focused-rgb: 41, 70, 84;
+  --compose-input-background: var(--Police-Blue) !important;
+  --compose-input-border: var(--Police-Blue) !important;
   --compose-panel-background: #1e2428;
   --compose-panel-background-rgb: 29.591, 36.36026, 40.309;
   --compose-primary: white !important;
@@ -220,6 +222,7 @@ html[dir] .dark ._1ByLM {
   --drawer-background-deep-rgb: var(--Maastricht-Blue-Rgb) !important;
   --drawer-gallery-background: var(--Maastricht-Blue) !important;
   --drawer-gallery-background-rgb: var(--Maastricht-Blue-Rgb) !important;
+  --drawer-gallery-background-hover: var(--Yankees-Blue) !important;
   --drawer-header-title: var(--White) !important;
   --drawer-header-title-rgb: var(--White-Rgb) !important;
   --drawer-section-background: var(--Maastricht-Blue) !important;
@@ -356,6 +359,7 @@ html[dir] .dark ._1ByLM {
   --panel-header-background-rgb: var(--Maastricht-Blue-Rgb) !important;
   --panel-header-icon: #b1b3b5;
   --panel-header-icon-rgb: 177, 179, 181;
+  --panel-input-background: var(--Police-Blue) !important;
   --panel-primary: rgba(241, 241, 242, 0.35);
   --panel-primary-rgb: 241, 241, 242;
   --payment-amount: #00a593;

@@ -1,8 +1,8 @@
 {
-  "author": "ErkamKumru",
-  "name": "Lunate Dark Mode",
+  "author": "Erkam Kumru",
+  "name": "Lunate Dark Mode for WA Web",
   "short_name": "LDM",
-  "version": "3.9.0",
+  "version": "3.9.1",
   "description": "Dark theme for WhatsApp Web",
   "permissions": ["storage"],
   "background": {
@@ -17,11 +17,7 @@
     }
   ],
   "web_accessible_resources": [
-    "images/intro-connection.png",
-    "images/right.png",
-    "images/left.png",
-    "images/animated-doodle.png",
-    "images/bg-chat-tile.png"
+    "images/animated-doodle.png"
   ],
   "browser_action": {
     "default_popup": "popup.html",
