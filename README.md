@@ -15,10 +15,5 @@
 
 ---
 
-[<img src="https://dev.opera.com/extensions/branding-guidelines/addons_206x58_en@2x.png" height="60"/>](https://addons.opera.com/tr/extensions/details/whatsapp-web-dark-mode/)
-</br>
-
----
-
 To install for other browser, you should activate developer mode and select this repository file.
 
